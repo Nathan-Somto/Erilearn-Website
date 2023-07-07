@@ -9,7 +9,7 @@ const Navbar = () => {
     /* Mobile nav open and close */
     const [openMobileNav,setOpenMobileNav] = useState(false);
   return (
-   <nav className="fixed top-0 h-[100px] bg-white justify-between py-3 flex items-center left-0 right-0 w-full px-[10%] z-[100] ">
+   <nav className="fixed top-0 h-[100px] bg-transparent justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[100] ">
     <Link href="/home" className="flex gap-1 text-[22px] items-end">
         {/* Logo */}
         <Image 
@@ -39,7 +39,7 @@ const Navbar = () => {
       className="h-[2px] w-5 bg-gray-900"></motion.div>
     </motion.div>
     {/* Mobile Nav */}
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
     {openMobileNav &&  <MobileNav/>}
     </AnimatePresence>
    
