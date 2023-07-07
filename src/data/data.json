@@ -1,0 +1,28 @@
+{
+    "navbar":
+    {
+
+   "text": [
+       "About us",
+       "Courses",
+       "Contact",
+       "Get Started" 
+    ],
+    "Courses":
+    [
+        "Product Design",
+        "Full Stack Javascript",
+        "Full stack Python",
+        "Product Management",
+        "3D"
+    ]
+},
+"hero":
+{
+    "heading1": "Transition to tech",
+    "span":"3 months",
+    "paragraph":"Your global tech journey begins here. Master the skills you need to start a successful career.",
+    "tagSpan":"100%",
+    "tagPara":"flexible learning structure"
+}
+}
