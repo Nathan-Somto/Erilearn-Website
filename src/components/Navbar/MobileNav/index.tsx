@@ -47,7 +47,7 @@ const MobileNav = (props: Props) => {
       initial={"hidden"}
       exit={"exit"}
       animate={"visible"}
-      className="z-[50] bg-gray-100 text-gray-900 gap-8 right-0 left-0 w-full fixed lg:hidden  top-24 h-[calc(100vh-96px)] flex flex-col  items-center justify-center text-xl"
+      className="z-[50] bg-white text-gray-900 gap-8 right-0 left-0 w-full fixed lg:hidden  top-24 h-[calc(100vh-96px)] flex flex-col  items-center justify-center text-xl"
     >
       {navbar.text.map((item, index) => {
         if (item === "Get Started") {

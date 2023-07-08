@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
         transition={{ duration: 0.75, ease: "easeIn" }}
         className="mt-[10%] text-center xl:text-left lg:mt-0"
       >
-        <h1 className="text-[50px] md:text-[62px] xl:text-[72px] w-[80%] xl:w-full mx-auto   xl:leading-[85px]">
+        <h1 className="text-[50px] md:text-[62px] xl:text-[72px] w-[80%] xl:w-full mx-auto text-secondary  xl:leading-[85px]">
           {hero.heading1}
           <span className="text-primary">{hero.span}</span>
         </h1>

@@ -4,6 +4,9 @@
 
 
 @layer base {
+  html,body{
+    @apply overflow-x-hidden;
+  }
   h1{
     @apply text-5xl font-semibold; 
   }
@@ -18,4 +21,10 @@
   .primary-btn{
     @apply bg-[#ca4c48] px-12  py-4 rounded-lg hover:opacity-80 transition-all ease-out duration-300 text-white;
   }
+  .primary-btn-outline{
+    @apply border-[#ca4c48] border border-solid px-6 py-3 rounded-lg text-[#342423] hover:bg-[#ca4c48] hover:text-[white] transition-all ease-out duration-300;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

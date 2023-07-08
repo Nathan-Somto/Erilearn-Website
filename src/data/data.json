@@ -24,5 +24,80 @@
     "paragraph":"Your global tech journey begins here. Master the skills you need to start a successful career.",
     "tagSpan":"100%",
     "tagPara":"flexible learning structure"
+},
+"Courses":{
+    "heading3":"Tech Courses",
+    "heading1":"Our Popular courses",
+    "card":[
+        {
+            "title":"Full Stack Javascript",
+            "teacher":"John Doe",
+            "image":"fullstack-js.png",
+            "level":"Beginner",
+            "modules":"25",
+            "avatar":"",
+            "price":"29,500"
+        },
+        {
+            "title":"Full Stack Python",
+            "teacher":"Jane Doe",
+            "image":"fullstack-python.png",
+            "level":"Intermiedate",
+            "modules":"20",
+            "avatar":"",
+            "price":"29,000"
+        },{
+            "title":"Product Design",
+            "teacher":"Mike Doe",
+            "image":"product-design.png",
+            "level":"Beginner",
+            "modules":"35",
+            "avatar":"",
+            "price":"31,000"
+        },{
+            "title":"Product Management",
+            "teacher":"Mina Doe",
+            "image":"product-management.png",
+            "level":"Advanced",
+            "modules":"40",
+            "avatar":"",
+            "price":"33,000"
+        },{
+            "title":"3D",
+            "teacher":"Vanessa Doe",
+            "image":"3D.png",
+            "level":"Beginner",
+            "modules":"55",
+            "avatar":"",
+            "price":"28,500"
+        }
+    ]
+},
+"WhyUs":{
+    "heading3":"Why Choose Us?",
+    "heading1":"Get Started with us Today",
+    "Card":[
+        {
+            "heading2":"Indepth Training & Quality Mentorship",
+            "para":"Unlock boundless possibilities with Erilearn's remarkable teachers and expert guidance. Benefit from personalized mentorship, allowing you to navigate your learning journey with confidence. ",
+            "color":"#FFDEDD"
+        },
+        {
+            "heading2":"Internship Placement",
+            "para":"Embark on a rewarding journey with Erilearn's Internship Placement program. Gain access to a network of prestigious companies and secure valuable internships that align with your career goals. ",
+            "color":"#E4E3FF"
+        },
+        {
+            "heading2":"Supportive Design, Community Networking",
+            "para":"Immerse yourself in Erilearn's Supportive Design and vibrant networking Community. Experience a collaborative environment that fosters creativity and innovation. ",
+            "color":"#FEF4E3"
+        }
+    ]
+},
+"Perks":{
+    "heading1":"Flexible Payment Plan for Working Class Students",
+    "para1":"Get a flexible after course payment plan for your learning experience as a working student for you to complete a course. That’s why our completion rates are 40% .",
+    "para2":"No hidden fees - the price you pay at the start of the course is all we ask for.",
+    "btn":"Get Started"
 }
 }
