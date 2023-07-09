@@ -23,8 +23,9 @@ const WhyUs = (props: Props) => {
             initial={{ scale: 0, opacity: 0 }}
             transition={{ delay: (index * 0.03) + 0.5, duration: 0.45 }}
             whileInView={{ scale: 1, opacity: 1 }}
+            key={index}
           >
-            <Card {...item} index={index} key={index} />
+            <Card {...item} index={index}  />
           </motion.div>
         ))}
       </div>

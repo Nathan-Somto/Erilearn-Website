@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     function handleScroll() {
       if (nav.current !== null) {
-        if (window.scrollY >= nav.current.offsetHeight || openMobileNav) {
+        if (window.scrollY >= nav.current.offsetHeight ||!hasScrolled) {
           setHasScrolled(true);
           return;
         }
@@ -26,9 +26,17 @@ const Navbar = () => {
   return (
     <motion.nav
       ref={nav}
-      initial={hasScrolled ?{y:-100,opacity:0,backgroundColor:'transparent'}:{backgroundColor:'transparent'}}
-      animate={hasScrolled?{y:0,opacity:1,backgroundColor:"white"}:{backgroundColor:"transparent"}}
-      transition={{duration:0.55,ease:'easeIn', type:'spring'}}
+      initial={
+        hasScrolled
+          ? { y: -100, opacity: 0, backgroundColor: "transparent" }
+          : { backgroundColor: "transparent" }
+      }
+      animate={
+        hasScrolled
+          ? { y: 0, opacity: 1, backgroundColor: "white" }
+          : { backgroundColor: "transparent" }
+      }
+      transition={{ duration: 0.55, ease: "easeIn", type: "spring" }}
       className={`fixed top-0 h-[100px] 
       } justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
     >
@@ -42,7 +50,10 @@ const Navbar = () => {
       <motion.div
         initial={{ scale: 1 }}
         animate={openMobileNav ? { scale: 0.9 } : {}}
-        onClick={() => setOpenMobileNav((prevState) => !prevState)}
+        onClick={() => {
+          setOpenMobileNav((prevState) => !prevState);
+          setHasScrolled((prevState) => !prevState);
+        }}
         className=" block lg:hidden  cursor-pointer"
       >
         <motion.div

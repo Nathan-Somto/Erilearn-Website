@@ -46,13 +46,13 @@ const Courses = (props: Props) => {
       <motion.div
        
         ref={coursesContainerRef}
-        className="flex scrollbar-hide overflow-x-hidden gap-8  px-8 mt-[100px] h-[550px] items-center pb-[50px]"
+        className="flex scrollbar-hide overflow-x-scroll md:overflow-x-hidden gap-8  px-8 mt-[100px] h-[550px] items-center pb-[50px]"
       >
-        <button className="absolute hover:opacity-50 left-[5px] z-[5] bg-secondary text-white font-bold py-2 px-4 rounded-[6px]" onClick={scrollToPrev}>&lt;</button>
+        <button className="absolute hidden md:block hover:opacity-50 left-[5px] z-[5] bg-secondary text-white font-bold py-2 px-4 rounded-[6px]" onClick={scrollToPrev}>&lt;</button>
         {Courses.card.map((item, index) => (
           <Card {...item} key={index} />
         ))}
-        <button className="absolute  hover:opacity-50 right-[5px] z-[5] bg-secondary text-white font-bold py-2 px-4 rounded-[6px]" onClick={scrollToNext}>&gt;</button>
+        <button className="absolute hidden md:block hover:opacity-50 right-[5px] z-[5] bg-secondary text-white font-bold py-2 px-4 rounded-[6px]" onClick={scrollToNext}>&gt;</button>
       </motion.div>
       </div>
     </section>

@@ -99,5 +99,92 @@
     "para1":"Get a flexible after course payment plan for your learning experience as a working student for you to complete a course. That’s why our completion rates are 40% .",
     "para2":"No hidden fees - the price you pay at the start of the course is all we ask for.",
     "btn":"Get Started"
+},
+"Steps":{
+    "heading3":"3 Steps",
+    "heading1":"How We work at Erilearn",
+    "Step":[
+        {
+            "heading2":"Purchase Preferred Course",
+            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
+        },
+        {
+            "heading2":"Execute a Capstone Project",
+            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
+        },
+        {
+            "heading2":"Get an Internship Placement",
+            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
+        }
+    ]
+
+},
+"testimonials":{
+    "heading3":"Alumni's",
+    "heading1":"Feedback From Our Students",
+    "Card": [
+        {
+            "avatar":"timi_sitting.png",
+          "name": "John Doe",
+          "testimonial": "Erilearn has completely transformed our team's skillset. The quality of their courses and mentorship is unmatched. Highly recommended!"
+        },
+        {
+            "avatar":"taiwo.png",
+          "name": "Jane Smith",
+          "testimonial": "I am incredibly impressed with Erilearn's supportive design and engaging community. It has been a game-changer for my professional development."
+        },
+        {
+            "avatar":"ima_son.png",
+          "name": "David Johnson",
+          "testimonial": "Erilearn's internship placement program opened doors to excellent opportunities. I secured an internship at a top-tier company, thanks to their guidance."
+        },
+        {
+            "avatar":"ope.png",
+          "name": "Emily Davis",
+          "testimonial": "Erilearn's personalized mentorship has been invaluable in my learning journey. I've gained practical skills that directly apply to my career."
+        },
+        {
+            "avatar":"bidemi_laptop.png",
+          "name": "Michael Brown",
+          "testimonial": "Erilearn's community is a treasure trove of knowledge and networking. I've connected with industry professionals and expanded my horizons."
+        }
+      ]
+},
+"Faq":{
+    "heading3":"Any Questions",
+    "heading2":"Your Answered",
+    "heading2Span":"Questions",
+    "para":"Here are some of the questions we get alot. if you have a question that's not here, hit us up on support.",
+    "FAQS":[
+        {
+        "question":"How does the 100% cash back work?"
+        ,"answer":""
+    },
+    {
+        "question":"How much is course?"
+        ,"answer":""
+    },
+    {
+        "question":"Are there any Hidden fees?"
+        ,"answer":""
+    },
+    {
+        "question":"How will i get a ccertificate?"
+        ,"answer":""
+    },
+    {
+        "question":"Are Classes Live?"
+        ,"answer":""
+    },
+    {
+        "question":"What are the premium perks?"
+        ,"answer":""
+    }
+    ],
+    "bottom":{
+        "heading2":"Any other questions?",
+        "para":"We're confident you'll love the program (hence we've set down a good learning structure). But if you are still on the fence we will be happy to answer your questions.",
+        "btn":"Send Us a Message"
+    }
 }
 }

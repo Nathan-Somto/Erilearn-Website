@@ -10,6 +10,9 @@ module.exports = {
       colors:{
         primary: '#EF4D48',
         secondary:'#3E3D3D'
+      },
+      fontFamily:{
+        poppins:['var(--font-poppins)', 'sans']
       }
     },
   },

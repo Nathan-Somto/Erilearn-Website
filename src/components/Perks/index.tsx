@@ -34,7 +34,7 @@ const Perks = (props: Props) => {
         >
           {Perks.heading1}
         </h1>
-        <div className="flex flex-col gap-6 text-[1.1rem]">
+        <div className="flex flex-col gap-6 text-[1.1rem] font-poppins">
           <p className="mx-auto lg:mx-0 w-[80%]">{Perks.para1}</p>
           <p className="mx-auto lg:mx-0 w-[80%]">{Perks.para2}</p>
           <button className="primary-btn lg:mx-0 mx-auto w-[195px]">

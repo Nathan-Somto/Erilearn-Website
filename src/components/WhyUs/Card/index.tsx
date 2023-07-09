@@ -56,7 +56,7 @@ const Card = (props: Props) => {
       <h2 className="text-[24px] font-bold text-[#3E3D3D]" >
         {props.heading2}
       </h2>
-      <p className="text-[#5D5D61] font-normal">
+      <p className="text-[#5D5D61] font-normal font-poppins">
         {props.para}
       </p>
     </div>

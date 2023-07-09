@@ -37,7 +37,7 @@ const Hero = (props: Props) => {
           {hero.tagPara}
         </motion.figcaption>
         <motion.figure initial={{x:50,opacity:0}}  animate={{x:0,opacity:1}} transition={{delay:0.8, duration:0.75, ease:'easeIn'}} className="absolute flex-shrink-0 top-[100px] rounded-[134px] overflow-hidden right-0">
-          <Image src={"/ima_son.png"} alt="student" height={400} width={300} />
+          <Image src={"/ima_son_chin.png"} alt="student" height={400} width={300} />
         </motion.figure>
         <motion.figcaption initial={{scale:0}} animate={{scale:1}} transition={{duration:0.8, delay:1.2}} className="absolute right-[200px] z-[7] bottom-[70px] bg-white text-secondary px-8 py-5 shadow-md rounded-[32px]">
           <span className="text-primary font-semibold">{hero.tagSpan} </span>
