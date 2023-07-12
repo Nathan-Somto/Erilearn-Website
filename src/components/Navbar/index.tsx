@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     function handleScroll() {
       if (nav.current !== null) {
-        if (window.scrollY >= nav.current.offsetHeight ||!hasScrolled) {
+        if (window.scrollY >= nav.current.offsetHeight ) {
           setHasScrolled(true);
           return;
         }
@@ -40,7 +40,7 @@ const Navbar = () => {
       className={`fixed top-0 h-[100px] 
       } justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
     >
-      <Link href="/home" className="flex gap-1 text-[22px] items-end">
+      <Link href="/home" className="flex gap-1 text-[22px] items-end relative top-0 z-[55]">
         {/* Logo */}
         <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
         Erilearn
@@ -54,13 +54,13 @@ const Navbar = () => {
           setOpenMobileNav((prevState) => !prevState);
           setHasScrolled((prevState) => !prevState);
         }}
-        className=" block lg:hidden  cursor-pointer"
+        className=" block lg:hidden  cursor-pointer relative top-0 z-[55]"
       >
         <motion.div
           transition={{ duration: 0.25 }}
           initial={{ y: 0, rotate: 0 }}
           animate={openMobileNav ? { y: 7, rotate: 45 } : {}}
-          className="h-[2px] w-[30px] bg-gray-900 mb-2"
+          className="h-[2px] w-[30px] bg-gray-900 mb-2 "
         ></motion.div>
         <motion.div
           transition={{ duration: 0.25 }}

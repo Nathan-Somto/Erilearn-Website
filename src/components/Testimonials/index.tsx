@@ -7,21 +7,25 @@ type Props = {};
 const Testimonials = (props: Props) => {
   const [currTestimonial, setCurrTestimonial] = useState(0);
   const { testimonials } = data;
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrTestimonial(
-        (prevState) => (prevState + 1) % testimonials.Card.length
-      );
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
+  const N = testimonials.Card.length;
+  const handleButtonClick = (index: number) => {
+    setCurrTestimonial(index);
+  };
+  const handleNextArrowClick = () => {
+    setCurrTestimonial((prevState) => (prevState + 1) % N);
+  };
+  const handlePrevArrowClick = () => {
+    setCurrTestimonial((prevState) => (prevState - 1 + N) % N);
+  };
   return (
-    <section className="mt-[100px] mx-[10%] flex pt-[50px] pb-[75px] w-full  flex-col">
+    <section
+      id="testimonials"
+      className="mt-[100px] mx-[10%] flex pt-[50px] pb-[75px] w-full  flex-col"
+    >
       <motion.div
-        initial={{ x: "-100%" }}
-        whileInView={{ x: "0%" }}
-        transition={{ duration: 0.55, ease: "easeIn" }}
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: "0%", opacity: 1 }}
+        transition={{ duration: 0.65, ease: "easeIn" }}
       >
         <h3 className="  mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">
           {testimonials.heading3}
@@ -31,7 +35,12 @@ const Testimonials = (props: Props) => {
         </h1>
       </motion.div>
       <div className="lg:flex mt-[60px] space-y-[80px] lg:space-y-0 lg:items-center lg:gap-[10%]  ">
-        <figure className="rounded-[40px] flex-shrink-0 w-[80%]  max-w-[500px] h-[320px] relative overflow-hidden">
+        <motion.figure
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: [0,0,0,0,0,1] }}
+          transition={{ duration: 0.65, ease: "easeIn" }}
+          className="rounded-[40px] flex-shrink-0 w-[80%]  max-w-[500px] h-[320px] relative overflow-hidden"
+        >
           <Image
             src={"/timi_sitting.png"}
             alt="timi sitting"
@@ -64,7 +73,7 @@ const Testimonials = (props: Props) => {
               <p>Watch Video</p>
             </div>
           </figcaption>
-        </figure>
+        </motion.figure>
         <div className="flex flex-col lg:w-[500px] w-[80%] flex-shrink-0 overflow-x-hidden">
           <AnimatePresence mode="wait">
             {testimonials.Card.map(
@@ -74,7 +83,7 @@ const Testimonials = (props: Props) => {
                     initial={{ x: "100%" }}
                     animate={{ x: 0 }}
                     exit={{ x: "-100%" }}
-                    transition={{ duration: 0.85, ease: "easeIn" }}
+                    transition={{ duration: 0.55, ease: "easeIn" }}
                     className="  mb-[70px] text-secondary space-y-4 "
                     key={item.name + index}
                   >
@@ -107,18 +116,56 @@ const Testimonials = (props: Props) => {
                 )
             )}
           </AnimatePresence>
-          <div className="flex gap-4 items-center">
-            {testimonials.Card.map((_, index) => (
-              <div
-                key={index}
-                className={`h-[12px] w-[12px] 
+          {/* Pagination Buttons */}
+          <div className="flex items-center justify-between">
+            <div className="flex gap-4 items-center">
+              {testimonials.Card.map((_, index) => (
+                <button
+                  onClick={() => handleButtonClick(index)}
+                  key={index}
+                  className={`h-[12px] w-[12px] 
                   rounded-[50%] border border-solid ${
                     currTestimonial === index
                       ? "bg-primary"
                       : "bg-transparent opacity-50 "
                   } transition-all ease-in duration-250 delay-75 border-primary`}
-              ></div>
-            ))}
+                ></button>
+              ))}
+            </div>
+            <div className="flex items-center gap-4">
+              <button onClick={handlePrevArrowClick} className="hover:opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.57146 7.42529L4.00004 11.999L8.57146 16.5716M18.8572 12.0002H4.00004"
+                    stroke="rgb(239,77,72)"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <button onClick={handleNextArrowClick} className="hover:opacity-50 rotate-[-180deg]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.57146 7.42529L4.00004 11.999L8.57146 16.5716M18.8572 12.0002H4.00004"
+                    stroke="rgb(239, 77, 72 )"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

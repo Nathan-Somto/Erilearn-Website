@@ -12,7 +12,7 @@ type Props = {
 
 const Card = (props: Props) => {
   return (
-    <div className="h-[480px] bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[350px] flex-shrink-0 shadow-[2px_1.5px_10px_rgba(0,0,0,0.5)] rounded-[12px] overflow-hidden">
+    <div className="h-[480px] bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[350px] flex-shrink-0  shadow-[1px_4px_12px_rgb(204,204,204)] rounded-[12px] overflow-hidden">
       <Image
         src={"/" + props.image}
         height={200}

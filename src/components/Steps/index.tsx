@@ -38,7 +38,7 @@ const Steps = (props: Props) => {
                   }}
                   className="text-[#C7403C] font-bold  lg:text-[14px] mb-2 pt-2"
                 >
-                  Step {index + 1}
+                  0{index + 1}
                 </motion.p>
                 {Steps.Step.length - 1 !== index && (
                   <motion.div
@@ -49,14 +49,18 @@ const Steps = (props: Props) => {
                   ></motion.div>
                 )}
               </div>
-              <div className="w-[80%]">
+              <motion.div  transition={{
+                    duration: 0.55,
+                    delay: (index * 0.15) + 0.25,
+                    ease: "easeIn",
+                  }} initial={{opacity:0.5}} whileInView={{opacity:1}} className="w-[80%]">
                 <h2 className="text-[20px] text-secondary font-semibold mb-2 p-0">
                   {item.heading2}
                 </h2>
                 <p className="w-[80%] block text-[#5D5D61] font-poppins">
                   {item.para}
                 </p>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>

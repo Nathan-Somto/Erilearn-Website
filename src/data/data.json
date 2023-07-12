@@ -1,190 +1,231 @@
 {
-    "navbar":
-    {
-
-   "text": [
-       "About us",
-       "Courses",
-       "Contact",
-       "Get Started" 
-    ],
-    "Courses":
-    [
-        "Product Design",
-        "Full Stack Javascript",
-        "Full stack Python",
-        "Product Management",
-        "3D"
+  "navbar": {
+    "text": ["About us", "Courses", "Contact", "Get Started"],
+    "Courses": [
+      "Product Design",
+      "Full Stack Javascript",
+      "Full Stack Python",
+      "Product Management",
+      "3D"
     ]
-},
-"hero":
-{
+  },
+  "hero": {
     "heading1": "Transition to tech in Just ",
-    "span":"3 months",
-    "paragraph":"Your global tech journey begins here. Master the skills you need to start a successful career.",
-    "tagSpan":"100%",
-    "tagPara":"flexible learning structure"
-},
-"Courses":{
-    "heading3":"Tech Courses",
-    "heading1":"Our Popular courses",
-    "card":[
-        {
-            "title":"Full Stack Javascript",
-            "teacher":"John Doe",
-            "image":"fullstack-js.png",
-            "level":"Beginner",
-            "modules":"25",
-            "avatar":"",
-            "price":"29,500"
-        },
-        {
-            "title":"Full Stack Python",
-            "teacher":"Jane Doe",
-            "image":"fullstack-python.png",
-            "level":"Intermiedate",
-            "modules":"20",
-            "avatar":"",
-            "price":"29,000"
-        },{
-            "title":"Product Design",
-            "teacher":"Mike Doe",
-            "image":"product-design.png",
-            "level":"Beginner",
-            "modules":"35",
-            "avatar":"",
-            "price":"31,000"
-        },{
-            "title":"Product Management",
-            "teacher":"Mina Doe",
-            "image":"product-management.png",
-            "level":"Advanced",
-            "modules":"40",
-            "avatar":"",
-            "price":"33,000"
-        },{
-            "title":"3D",
-            "teacher":"Vanessa Doe",
-            "image":"3D.png",
-            "level":"Beginner",
-            "modules":"55",
-            "avatar":"",
-            "price":"28,500"
-        }
+    "span": "3 months",
+    "paragraph": "Your global tech journey begins here. Master the skills you need to start a successful career.",
+    "tagSpan": "100%",
+    "tagPara": "flexible learning structure"
+  },
+  "Courses": {
+    "heading3": "Tech Courses",
+    "heading1": "Our Popular courses",
+    "card": [
+      {
+        "title": "Full Stack Javascript",
+        "teacher": "John Doe",
+        "image": "fullstack-js.png",
+        "level": "Beginner",
+        "modules": "25",
+        "avatar": "",
+        "price": "29,500"
+      },
+      {
+        "title": "Full Stack Python",
+        "teacher": "Jane Doe",
+        "image": "fullstack-python.png",
+        "level": "Intermiedate",
+        "modules": "20",
+        "avatar": "",
+        "price": "29,000"
+      },
+      {
+        "title": "Product Design",
+        "teacher": "Mike Doe",
+        "image": "product-design.png",
+        "level": "Beginner",
+        "modules": "35",
+        "avatar": "",
+        "price": "31,000"
+      },
+      {
+        "title": "Product Management",
+        "teacher": "Mina Doe",
+        "image": "product-management.png",
+        "level": "Advanced",
+        "modules": "40",
+        "avatar": "",
+        "price": "33,000"
+      },
+      {
+        "title": "3D",
+        "teacher": "Vanessa Doe",
+        "image": "3D.png",
+        "level": "Beginner",
+        "modules": "55",
+        "avatar": "",
+        "price": "28,500"
+      }
     ]
-},
-"WhyUs":{
-    "heading3":"Why Choose Us?",
-    "heading1":"Get Started with us Today",
-    "Card":[
-        {
-            "heading2":"Indepth Training & Quality Mentorship",
-            "para":"Unlock boundless possibilities with Erilearn's remarkable teachers and expert guidance. Benefit from personalized mentorship, allowing you to navigate your learning journey with confidence. ",
-            "color":"#FFDEDD"
-        },
-        {
-            "heading2":"Internship Placement",
-            "para":"Embark on a rewarding journey with Erilearn's Internship Placement program. Gain access to a network of prestigious companies and secure valuable internships that align with your career goals. ",
-            "color":"#E4E3FF"
-        },
-        {
-            "heading2":"Supportive Design, Community Networking",
-            "para":"Immerse yourself in Erilearn's Supportive Design and vibrant networking Community. Experience a collaborative environment that fosters creativity and innovation. ",
-            "color":"#FEF4E3"
-        }
-    ]
-},
-"Perks":{
-    "heading1":"Flexible Payment Plan for Working Class Students",
-    "para1":"Get a flexible after course payment plan for your learning experience as a working student for you to complete a course. That’s why our completion rates are 40% .",
-    "para2":"No hidden fees - the price you pay at the start of the course is all we ask for.",
-    "btn":"Get Started"
-},
-"Steps":{
-    "heading3":"3 Steps",
-    "heading1":"How We work at Erilearn",
-    "Step":[
-        {
-            "heading2":"Purchase Preferred Course",
-            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
-        },
-        {
-            "heading2":"Execute a Capstone Project",
-            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
-        },
-        {
-            "heading2":"Get an Internship Placement",
-            "para":"With experienced designers who will not only teach you practically, but would also mentor you through."
-        }
-    ]
-
-},
-"testimonials":{
-    "heading3":"Alumni's",
-    "heading1":"Feedback From Our Students",
+  },
+  "WhyUs": {
+    "heading3": "Why Choose Us?",
+    "heading1": "Get Started with us Today",
     "Card": [
-        {
-            "avatar":"timi_sitting.png",
-          "name": "John Doe",
-          "testimonial": "Erilearn has completely transformed our team's skillset. The quality of their courses and mentorship is unmatched. Highly recommended!"
-        },
-        {
-            "avatar":"taiwo.png",
-          "name": "Jane Smith",
-          "testimonial": "I am incredibly impressed with Erilearn's supportive design and engaging community. It has been a game-changer for my professional development."
-        },
-        {
-            "avatar":"ima_son.png",
-          "name": "David Johnson",
-          "testimonial": "Erilearn's internship placement program opened doors to excellent opportunities. I secured an internship at a top-tier company, thanks to their guidance."
-        },
-        {
-            "avatar":"ope.png",
-          "name": "Emily Davis",
-          "testimonial": "Erilearn's personalized mentorship has been invaluable in my learning journey. I've gained practical skills that directly apply to my career."
-        },
-        {
-            "avatar":"bidemi_laptop.png",
-          "name": "Michael Brown",
-          "testimonial": "Erilearn's community is a treasure trove of knowledge and networking. I've connected with industry professionals and expanded my horizons."
-        }
-      ]
-},
-"Faq":{
-    "heading3":"Any Questions",
-    "heading2":"Your Answered",
-    "heading2Span":"Questions",
-    "para":"Here are some of the questions we get alot. if you have a question that's not here, hit us up on support.",
-    "FAQS":[
-        {
-        "question":"How does the 100% cash back work?"
-        ,"answer":""
-    },
-    {
-        "question":"How much is course?"
-        ,"answer":""
-    },
-    {
-        "question":"Are there any Hidden fees?"
-        ,"answer":""
-    },
-    {
-        "question":"How will i get a ccertificate?"
-        ,"answer":""
-    },
-    {
-        "question":"Are Classes Live?"
-        ,"answer":""
-    },
-    {
-        "question":"What are the premium perks?"
-        ,"answer":""
-    }
+      {
+        "heading2": "Indepth Training & Quality Mentorship",
+        "para": "Unlock boundless possibilities with Erilearn's remarkable teachers and expert guidance. Benefit from personalized mentorship, allowing you to navigate your learning journey with confidence. ",
+        "color": "#FFDEDD"
+      },
+      {
+        "heading2": "Internship Placement",
+        "para": "Embark on a rewarding journey with Erilearn's Internship Placement program. Gain access to a network of prestigious companies and secure valuable internships that align with your career goals. ",
+        "color": "#E4E3FF"
+      },
+      {
+        "heading2": "Supportive Design, Community Networking",
+        "para": "Immerse yourself in Erilearn's Supportive Design and vibrant networking Community. Experience a collaborative environment that fosters creativity and innovation. ",
+        "color": "#FEF4E3"
+      }
+    ]
+  },
+  "Perks": {
+    "heading1": "Flexible Payment Plan for Working Class Students",
+    "para1": "Get a flexible after course payment plan for your learning experience as a working student for you to complete a course. That’s why our completion rates are 40% .",
+    "para2": "No hidden fees - the price you pay at the start of the course is all we ask for.",
+    "btn": "Get Started"
+  },
+  "Steps": {
+    "heading3": "3 Steps",
+    "heading1": "How We work at Erilearn",
+    "Step": [
+      {
+        "heading2": "Purchase Preferred Course",
+        "para": "With experienced designers who will not only teach you practically, but would also mentor you through."
+      },
+      {
+        "heading2": "Execute a Capstone Project",
+        "para": "With experienced designers who will not only teach you practically, but would also mentor you through."
+      },
+      {
+        "heading2": "Get an Internship Placement",
+        "para": "With experienced designers who will not only teach you practically, but would also mentor you through."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading3": "Alumni's",
+    "heading1": "Feedback From Our Students",
+    "Card": [
+      {
+        "avatar": "timi_sitting.png",
+        "name": "John Doe",
+        "testimonial": "Erilearn has completely transformed our team's skillset. The quality of their courses and mentorship is unmatched. Highly recommended!"
+      },
+      {
+        "avatar": "taiwo.png",
+        "name": "Jane Smith",
+        "testimonial": "I am incredibly impressed with Erilearn's supportive design and engaging community. It has been a game-changer for my professional development."
+      },
+      {
+        "avatar": "ima_son.png",
+        "name": "David Johnson",
+        "testimonial": "Erilearn's internship placement program opened doors to excellent opportunities. I secured an internship at a top-tier company, thanks to their guidance."
+      },
+      {
+        "avatar": "ope.png",
+        "name": "Emily Davis",
+        "testimonial": "Erilearn's personalized mentorship has been invaluable in my learning journey. I've gained practical skills that directly apply to my career."
+      },
+      {
+        "avatar": "bidemi_laptop.png",
+        "name": "Michael Brown",
+        "testimonial": "Erilearn's community is a treasure trove of knowledge and networking. I've connected with industry professionals and expanded my horizons."
+      }
+    ]
+  },
+  "Faq": {
+    "heading1": "Faqs",
+    "heading3": "Any Questions",
+    "heading2": "Your Answered",
+    "heading2Span": "Questions",
+    "para": "Here are some of the questions we get alot. if you have a question that's not here, hit us up on support.",
+    "FAQS": [
+      {
+        "question": "How does the 100% cash back work?",
+        "answer": ""
+      },
+      {
+        "question": "How much is course?",
+        "answer": ""
+      },
+      {
+        "question": "Are there any Hidden fees?",
+        "answer": ""
+      },
+      {
+        "question": "How will i get a Certificate?",
+        "answer": ""
+      },
+      {
+        "question": "Are Classes Live?",
+        "answer": ""
+      },
+      {
+        "question": "What are the premium perks?",
+        "answer": ""
+      }
     ],
-    "bottom":{
-        "heading2":"Any other questions?",
-        "para":"We're confident you'll love the program (hence we've set down a good learning structure). But if you are still on the fence we will be happy to answer your questions.",
-        "btn":"Send Us a Message"
+    "bottom": {
+      "heading2": "Any other questions?",
+      "para": "We're confident you'll love the program (hence we've set down a good learning structure). But if you are still on the fence we will be happy to answer your questions.",
+      "btn": "Send Us a Message"
     }
-}
+  },
+  "footer": {
+    "logo":"Erilearn",
+    "para":"UI Kits, Templates and Dashboards built on top of Tailwind, Vue.js, React, Angular, Node.js and Laravel. Join over 516,257 creatives to access all our products!",
+    "links": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "github": ""
+    },
+    "data": [
+      {
+        "heading": "Company",
+        "data": [
+                "About us",
+                "Faq",
+                "Courses",
+                "Terms of Service",
+                "Privacy Policies"
+        ]
+      },{
+        "heading":"Courses",
+        "data":[
+            "Product Design",
+            "Product Management",
+            "Full Stack Python",
+            "Full Stack Javascript",
+            "3D"
+        ]
+      },
+      {
+        "heading":"Links",
+        "data":[
+            "Sign Up",
+            "Login",
+            "Our Testimonials",
+            "Help Center"
+        ]
+      },
+      {
+        "heading":"Contact",
+        "data":[
+            "Support@Erilearn.com",
+            "WhatsApp"
+        ]
+      }
+    ]
+  }
 }
