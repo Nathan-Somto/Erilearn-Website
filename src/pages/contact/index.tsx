@@ -5,8 +5,9 @@ import data from "@/data/contact.json";
 import { Formik } from "formik";
 import{motion} from 'framer-motion';
 import ContactSchema from "@/schema/contact";
+import { sendMail } from "@/services/axiosClient";
 type Props = {};
-
+//@TODO: Test Email endpoint, add Loading state and Error State.
 const Contact = (props: Props) => {
   const { contact } = data;
   const fill = "#F7A6A4";
@@ -107,11 +108,15 @@ const Contact = (props: Props) => {
               message: "",
             }}
             validationSchema={ContactSchema}
-            onSubmit={(values) => {
-              console.log(values);
+            onSubmit={async (values) => {
+              try{
+                const response = await sendMail(values);
+              }catch(err){
+
+              }
             }}
           >
-            {({ errors, touched,handleChange,handleSubmit,values, handleBlur }) => (
+            {({ errors, touched,handleChange,handleSubmit,values, handleBlur,isValid }) => (
               <form onSubmit={handleSubmit} className=" text-secondary mt-[150px] pb-[50px] max-w-[800px] w-[80%] mx-auto ">
                 <div className="w-full">
                   <h1 className="text-center mb-[50px]">
@@ -225,7 +230,7 @@ const Contact = (props: Props) => {
                       value={values.message}
                     ></textarea>
                   </div>
-                  <button className="primary-btn w-full  mt-[50px] text-[1.1rem] font-medium">
+                  <button type="submit" disabled={!isValid} className=" disabled:opacity-50 primary-btn w-full  mt-[50px] text-[1.1rem] font-medium">
                     {" "}
                     Send Message
                   </button>
