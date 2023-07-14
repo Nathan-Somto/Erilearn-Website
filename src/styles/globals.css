@@ -24,6 +24,12 @@
   .primary-btn-outline{
     @apply border-[#ca4c48] border border-solid px-6 py-3 rounded-lg text-[#ca4c48] hover:bg-[#ca4c48] hover:text-[white] transition-all ease-out duration-300;
   }
+  .input{
+    @apply py-4 px-8 outline-none bg-white rounded-[5px] border border-solid border-gray-400 text-[#5D5D61];
+  }
+  .input-error{
+    @apply  border-[#ca4c48] focus:border-[#ca4c48] active:border-[#ca4c48];
+  }
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

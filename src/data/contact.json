@@ -1,0 +1,31 @@
+{
+    "contact":{
+        "heading1":"Contact Us",
+        "para":"If you have any questions or comments, please contact us via the means provided, or send us a message using the contact form below",
+        "card":[
+            {
+                "id":"1",
+                "heading":"Call us",
+                "para":"+234 809 190 1456",
+                "linkText":"click to call",
+                "href":"tel:+2348091901456"
+            },{
+                "id":"2",
+                "heading":"Send a Mail",
+                "para":"support@Erilearn.com",
+                "linkText":"click to mail",
+                "href":"mailto:support@Erilearn.com"
+            },{
+                "id":"3",
+                "heading":"Visit Us",
+                "para":"The Philippi Centre, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja",
+                "linkText":"view map",
+                "href":"/contact/map"
+            }
+        ],
+        "form":{
+            "heading":"Get in",
+            "span":"Touch"
+        }
+    }
+}
