@@ -46,7 +46,7 @@ const Navbar = () => {
       className={`fixed top-0 h-[100px] 
        justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
     >
-      <Link href="/home" className="flex gap-1 text-[22px] items-end relative top-0 z-[55]">
+      <Link href="/" className="flex gap-1 text-[22px] items-end relative top-0 z-[55]">
         {/* Logo */}
         <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
         Erilearn
