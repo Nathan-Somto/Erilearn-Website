@@ -21,7 +21,7 @@ const Contact = (props: Props) => {
           <motion.h1 initial={{y:350,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.85, ease:"easeIn"}} className="xl:text-[72px] text-[35px] sm:text-5xl">
             {contact.heading1}
           </motion.h1>
-          <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.95,duration:0.55, ease:"easeIn"}} className="opacity-80 text-[1.2rem] w-[80%] font-medium mx-auto leading-[35px]">
+          <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.95,duration:0.55, ease:"easeIn"}} className="opacity-80 text-[1.2rem] w-[80%] font-medium font-poppins mx-auto leading-[35px]">
             {contact.para}
           </motion.p>
         </header>

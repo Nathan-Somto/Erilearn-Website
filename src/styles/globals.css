@@ -30,7 +30,13 @@
   .input-error{
     @apply  border-[#ca4c48] focus:border-[#ca4c48] active:border-[#ca4c48];
   }
+  .badge{
+    @apply bg-[#FCDBDA] text-[#501A18] py-2 px-3 rounded-[8px] inline-block font-semibold;
+  }
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+.swiper-slide{
+  width:128px;
 }

@@ -1,0 +1,35 @@
+{
+    "hero":{
+        "badge":"learn about us",
+        "heading1":"Get to Know Who we are!",
+        "para1":"Join our 6-week program and learn the foundations of the product manager role. Learn how to understand customer problems, validate ideas, prioritize features and more." ,
+       "para2":"Whether you're an aspiring product manager or leader, an entrepreneur, a team member that works with PM’s or developers, our beginner-friendly course is designed to give you a solid foundation. In just six weeks, you'll learn the key skills of how to build great products and excel in this rewarding career.",
+       "btn":"Enroll Now"
+    },
+    "sections":[
+        {
+            "imageUrl":"arms.png",
+            "id":"1",
+            "badge":"Our Culture",
+            "heading":"Our Value",
+            "para":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+        },
+        {
+            "imageUrl":"laptops.png",
+            "id":"2",
+            "badge":"Our Aim",
+            "heading":"Our Mission",
+            "para":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+        }
+    ],
+    "team":{
+        "badge":"Our Team",
+        "heading":"Meet our Real MVP's",
+        "card":[
+        {"image":"taiwo_arms.png", "name":"Taiwo Joseph", "title":"Ceo & Co-Founder of Erilearn"},
+        {"image":"korede_arms.png", "name":"Akorede Olarinde", "title":"Coo"},
+        {"image":"bidemi_arms.png", "name":"Abidemi Rasheed", "title":"Chief Marketer"},
+        {"image":"timi_sitting.png", "name":"Timilehin Oluwasegun", "title":"Senior Product Designer"},
+        {"image":"ope.png", "name":"Opeyemi", "title":"Senior Product Manager"}
+    ]}
+}
