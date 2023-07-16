@@ -8,7 +8,7 @@ import ContactSchema from "@/schema/contact";
 import { sendMail } from "@/services/axiosClient";
 type Props = {};
 //@TODO: Test Email endpoint, add Loading state and Error State.
-const Contact = (props: Props) => {
+const ContactPage = (props: Props) => {
   const { contact } = data;
   const fill = "#F7A6A4";
   return (
@@ -244,4 +244,4 @@ const Contact = (props: Props) => {
   );
 };
 
-export default Contact;
+export default ContactPage;

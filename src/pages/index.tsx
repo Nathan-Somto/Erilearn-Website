@@ -10,7 +10,7 @@ import React from "react";
 
 type Props = {};
 
-const Home = (props: Props) => {
+const HomePage = (props: Props) => {
   return (
     <>
       <Head>
@@ -32,4 +32,4 @@ const Home = (props: Props) => {
     </>
   );
 };
-export default Home;
+export default HomePage;
