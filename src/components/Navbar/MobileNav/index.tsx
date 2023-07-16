@@ -47,7 +47,7 @@ const MobileNav = (props: Props) => {
       initial={"hidden"}
       exit={"exit"}
       animate={"visible"}
-      className="z-[50] bg-white text-gray-900 gap-8 right-0 left-0 w-full fixed lg:hidden  top-0 h-screen flex flex-col  items-center justify-center text-xl"
+      className="z-[50] bg-white text-gray-900 gap-8 right-0 left-0 w-full fixed lg:hidden  top-0 h-screen overflow-y-auto flex flex-col  items-center justify-center text-xl"
     >
       <li className="relative">
       <motion.div variants={divVariants}>

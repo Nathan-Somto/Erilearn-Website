@@ -23,6 +23,12 @@ const Navbar = () => {
     document.addEventListener("scroll", handleScroll);
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
+  const mobileNavToggle = ()=>{
+    document.body.classList.toggle('overflow-hidden');
+    document.body.classList.toggle('h-screen');
+    setOpenMobileNav((prevState) => !prevState);
+    setHasScrolled((prevState) => !prevState);
+  }
   return (
     <motion.nav
       ref={nav}
@@ -38,7 +44,7 @@ const Navbar = () => {
       }
       transition={{ duration: 0.55, ease: "easeIn", type: "spring" }}
       className={`fixed top-0 h-[100px] 
-      } justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
+       justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
     >
       <Link href="/home" className="flex gap-1 text-[22px] items-end relative top-0 z-[55]">
         {/* Logo */}
@@ -50,10 +56,7 @@ const Navbar = () => {
       <motion.div
         initial={{ scale: 1 }}
         animate={openMobileNav ? { scale: 0.9 } : {}}
-        onClick={() => {
-          setOpenMobileNav((prevState) => !prevState);
-          setHasScrolled((prevState) => !prevState);
-        }}
+        onClick={mobileNavToggle}
         className=" block lg:hidden  cursor-pointer relative top-0 z-[55]"
       >
         <motion.div

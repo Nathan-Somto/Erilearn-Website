@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { formatLink } from "@/utils";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 type Props = {
   dropdownContent: string[];
-  handleMouseOut?: ()=>void;
+  handleMouseOut?: () => void;
 };
 
-const Dropdown = ({ dropdownContent,handleMouseOut }: Props) => {
+const Dropdown = ({ dropdownContent, handleMouseOut }: Props) => {
   const fill = "#F7A6A4";
   const size = 28;
   const renderSvg = (content: string) => {
@@ -114,19 +114,20 @@ const Dropdown = ({ dropdownContent,handleMouseOut }: Props) => {
     }
   };
   return (
-    <motion.div 
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    onMouseLeave={handleMouseOut}
-    transition={{duration:0.55, ease:'easeIn'}}
-    className="lg:absolute text-[rgb(55,55,55)] lg:w-[520px] my-4 lg:my-0  lg:shadow-[2px_0_10px_rgba(55,55,55,0.5)] lg:rounded-[8px] lg:flex-row gap-2 lg:flex-wrap lg:gap-4 lg:right-[10%] lg:bottom-[-220px] relative flex flex-col bottom-0 text-center z-[900] bg-white lg:px-6 lg:py-4 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      onMouseLeave={handleMouseOut}
+      transition={{ duration: 0.55, ease: "easeIn" }}
+      className="lg:absolute text-[rgb(55,55,55)] items-center justify-center lg:items-start lg:justify-start lg:w-[520px] mt-8 lg:my-0  lg:shadow-[2px_0_10px_rgba(55,55,55,0.5)] lg:rounded-[8px] lg:flex-row gap-2 lg:flex-wrap lg:gap-4 lg:right-[10%] lg:bottom-[-220px] relative flex flex-col bottom-0 text-center z-[900] bg-white lg:px-6 lg:py-4 "
+    >
       {dropdownContent.map((content, index) => (
         <Link
           href={formatLink(content)}
           key={index}
           className=" items-center flex  gap-2"
         >
-          <span className=" bg-[#FFF3F3] w-[52px] h-[52px] rounded-[50%]  flex items-center justify-center">
+          <span className=" bg-[#FFF3F3] hidden w-[52px] h-[52px] rounded-[50%]  lg:flex items-center justify-center">
             {renderSvg(content)}
           </span>
           <span>{content}</span>
