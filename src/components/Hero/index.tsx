@@ -1,6 +1,6 @@
 import React from "react";
 import data from "@/data/data.json";
-import Image from "next/image";
+import Image from 'next/image';
 import { motion } from "framer-motion";
 type Props = {};
 
@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
           transition={{ delay: 0.7, duration: 0.7, ease: "easeIn" }}
           className="absolute flex-shrink-0 z-[5] top-[-5px] rounded-[128px] border-4 border-solid border-white overflow-hidden left-[20%]"
         >
-          <Image src={"/ope.png"} priority alt="staff" height={350} width={280} />
+          <Image src={"/ope.png"} priority alt="staff" height={350} width={280} className="object-cover h-[350px]" />
         </motion.figure>
         <motion.figcaption
           initial={{ scale: 0 }}
@@ -84,6 +84,7 @@ const Hero = (props: Props) => {
             height={400}
             priority
             width={300}
+            className="h-[400px] object-cover"
           />
         </motion.figure>
         <motion.figcaption
