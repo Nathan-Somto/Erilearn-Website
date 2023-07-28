@@ -1,0 +1,763 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "courseName": "Product Design",
+        "courseOverview": "This course provides an introduction to product design, covering various aspects such as design principles, user research, prototyping, visual design, and more.\nGain valuable insights into user needs and preferences, refine your designs iteratively, and unleash your creativity in this dynamic and rewarding field.\nWhether sketching ideas on paper or creating interactive mockups, you'll learn essential prototyping skills.\nAdditionally, conducting user testing will help you validate your designs and create user-centered products.",
+        "description":"Explore the world of product design and learn how to create user-centered and impactful designs. Gain insights into user research, develop your ideation and prototyping skills.\n\n conduct user testing, and refine your designs through iterative processes. Develop your ideation and prototyping skills, bringing your creative concepts to life. Whether it's sketching out rough ideas on paper or creating interactive wireframes and mockups using digital tools, prototyping enables you to visualize and refine your design concepts efficiently.",
+        "videoLink":"https://www.youtube.com/embed/IvJ-ERxbYjw",
+        "instructor": "Ope Akintomade",
+        "avatar":"ope.png",
+        "workedAt": "Apple",
+        "productCard":{
+          "duration": "80 hours",
+          "level": "beginner",
+          "course":"6 modules",
+          "project": "1 Portfolio",
+          "downloadLink":"",
+          "price":"NGN 100,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to Product Design",
+            "content": [
+              "Definition and principles of product design",
+              "Design thinking process",
+              "User-centered design approach",
+              "Market research and analysis",
+              "Competitor analysis"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "User Research and Personas",
+            "content": [
+              "User research methods and techniques",
+              "Creating user personas",
+              "User interviews and surveys",
+              "Empathy mapping",
+              "User journey mapping"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "Ideation and Concept Development",
+            "content": [
+              "Brainstorming techniques",
+              "Sketching and wireframing",
+              "Concept development and evaluation",
+              "Design workshops",
+              "Storyboarding"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Information Architecture and User Flows",
+            "content": [
+              "Information architecture principles",
+              "Organizing content and navigation",
+              "Creating user flows",
+              "Card sorting",
+              "Sitemap creation"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "Interaction Design and Prototyping",
+            "content": [
+              "Interaction design principles",
+              "Creating interactive prototypes",
+              "Usability testing",
+              "Iterative design process",
+              "UI design patterns"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "Visual Design and Branding",
+            "content": [
+              "Visual design principles",
+              "Color theory and typography",
+              "Creating style guides",
+              "Brand identity design",
+              "Visual hierarchy"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "Usability Testing and Feedback",
+            "content": [
+              "Planning and conducting usability tests",
+              "User feedback and observation",
+              "Iterative design based on test results",
+              "Heuristic evaluation",
+              "Accessibility testing"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Design for Mobile and Responsive Web",
+            "content": [
+              "Mobile design considerations",
+              "Responsive web design",
+              "Mobile app design guidelines",
+              "Designing for different screen sizes",
+              "Mobile UI patterns"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Designing for Emerging Technologies",
+            "content": [
+              "Designing for virtual reality (VR)",
+              "Augmented reality (AR) design principles",
+              "Voice user interfaces (VUI)",
+              "Internet of Things (IoT) design",
+              "Wearable technology design"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Design Collaboration and Tools",
+            "content": [
+              "Collaborative design process",
+              "Version control for design",
+              "Design handoff and documentation",
+              "Design collaboration tools",
+              "Effective communication in design teams"
+            ]
+          },
+          {
+            "weekNumber": 11,
+            "topic": "Design Portfolio and Presentation",
+            "content": [
+              "Building an effective design portfolio",
+              "Showcasing design work",
+              "Crafting compelling case studies",
+              "Presenting design projects",
+              "Job search strategies for designers"
+            ]
+          },
+          {
+            "weekNumber": 12,
+            "topic": "Final Project Showcase",
+            "content": [
+              "Final project development and refinement",
+              "Preparing for the final presentation",
+              "Receiving feedback and critique",
+              "Reflection on the course journey",
+              "Celebrating achievements"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseName": "Fullstack JavaScript",
+        "courseOverview": "This course explores fullstack JavaScript development, encompassing frontend and backend technologies, as well as databases and web development frameworks. Master the fundamental skills needed to create dynamic web applications and build expertise in both client-side and server-side programming. By the end of this course, you'll be well-prepared to develop and deploy robust, fullstack JavaScript applications.",
+        "description": "In this comprehensive web development course, master JavaScript for both frontend and backend development, building dynamic web applications that captivate users. Explore popular frameworks like React, Node.js, and Express.js to create interactive web experiences.\n\nStart with HTML, CSS, and JavaScript fundamentals, establishing a foundation for stunning user interfaces. Progress to React's component-based architecture, state management, and routing for building complex applications effortlessly. On the backend, harness Node.js for scalable server-side applications, incorporating asynchronous programming, RESTful APIs, and database integration. Use Express.js to build robust backend APIs, handling user requests, responses, and security. Engage in hands-on projects to solidify your expertise as a full-stack web developer, ready to craft powerful web experiences. Join now and unleash your potential in the ever-evolving world of web development.",
+        "instructor": "Taiwo Joseph",
+        "workedAt": "Google",
+        "avatar":"taiwo_arms.png",
+        "videoLink":"https://www.youtube.com/embed/8KaJRw-rfn8",
+        "productCard":{
+          "duration": "100 hours",
+          "level": "beginner",
+          "course":"10 modules",
+          "project": "1 Portfolio",
+          "downloadLink":"",
+          "price":"NGN 150,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to JavaScript",
+            "content": [
+              "JavaScript syntax and fundamentals",
+              "Variables, data types, and operators",
+              "Control flow and loops",
+              "Functions and scope",
+              "DOM manipulation"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "Frontend Development with HTML and CSS",
+            "content": [
+              "HTML structure and elements",
+              "CSS styling and selectors",
+              "Responsive web design",
+              "Tailwind CSS",
+              "Building user interfaces"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "JavaScript Frameworks - React",
+            "content": [
+              "Introduction to React",
+              "Components and props",
+              "State management with hooks",
+              "React Router",
+              "Building dynamic web applications"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Backend Development with Node.js",
+            "content": [
+              "Introduction to Node.js",
+              "Working with Express.js",
+              "RESTful APIs and routing",
+              "Database integration (e.g., MongoDB)",
+              "Authentication and authorization"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "Database Management",
+            "content": [
+              "Relational databases (e.g., MySQL, PostgreSQL)",
+              "NoSQL databases (e.g., MongoDB, Firebase)",
+              "Database modeling and design",
+              "Querying and CRUD operations",
+              "Database normalization and optimization"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "Server-side Rendering (SSR)",
+            "content": [
+              "Introduction to SSR",
+              "Server-side templating",
+              "Using server frameworks (e.g., Next.js)",
+              "Data fetching and pre-rendering",
+              "Building universal web applications"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "API Development and Integration",
+            "content": [
+              "Building RESTful APIs",
+              "API documentation and testing",
+              "API security and authentication",
+              "Third-party API integration",
+              "Handling API errors and rate limiting"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Authentication and Authorization",
+            "content": [
+              "User authentication methods",
+              "Token-based authentication",
+              "OAuth and OpenID Connect",
+              "Role-based access control",
+              "Implementing secure user authentication"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Testing and Debugging",
+            "content": [
+              "Introduction to unit testing",
+              "Test-driven development (TDD)",
+              "Debugging JavaScript applications",
+              "End-to-end testing with frameworks (e.g., Cypress)",
+              "Code quality and linting"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Deployment and DevOps",
+            "content": [
+              "Deployment strategies",
+              "Continuous integration and deployment (CI/CD)",
+              "Infrastructure as code (IaC)",
+              "Monitoring and logging",
+              "Scaling and load balancing"
+            ]
+          },
+          {
+            "weekNumber": 11,
+            "topic": "Performance Optimization",
+            "content": [
+              "Optimizing frontend performance",
+              "Server-side performance considerations",
+              "Caching and CDNs",
+              "Code bundling and minification",
+              "Performance profiling and analysis"
+            ]
+          },
+          {
+            "weekNumber": 12,
+            "topic": "Portfolio Project",
+            "content": [
+              "Planning and executing a portfolio project",
+              "Building a fullstack web application",
+              "MERN stack (MongoDB, Express.js, React, Node.js)",
+              "Deployment and hosting",
+              "Final project presentation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseName": "Fullstack Python with Django",
+        "courseOverview": "This course covers fullstack web development using Python and Django, including frontend and backend technologies, database integration, and authentication. Master the essentials to build powerful web applications. Unlock your potential in fullstack web development with Python and Django.",
+        "description": "Discover the power of Python and Django in full-stack web development. Master Django's robust features, integrate frontend frameworks, and create scalable web solutions. Gain practical experience through hands-on projects and become a proficient full-stack web developer, ready to tackle real-world challenges.\n\nThroughout the course, explore Python and Django's versatility in building dynamic web applications. Learn to handle URLs, views, forms, and templates effectively, creating interactive and responsive web solutions. Integrate frontend frameworks to enhance user experience with captivating interfaces. Additionally, hone your skills in database integration for scalable and secure web applications. By course completion, you'll be well-equipped to excel as a full-stack web developer and turn your innovative ideas into reality. Embark on this transformative journey now and unlock your potential in the exciting realm of web development.",
+        "instructor": "Timilehin Oluwasegun",
+        "workedAt": "Facebook",
+        "avatar":"timi_sitting.png",
+        "videoLink":"https://www.youtube.com/embed/8KaJRw-rfn8",
+        "productCard":{
+          "duration": "95 hours",
+          "level": "beginner",
+          "course":"9 modules",
+          "project": "1 Portfolio",
+          "downloadLink":"",
+          "price":"NGN 140,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to Python",
+            "content": [
+              "Python syntax and fundamentals",
+              "Variables, data types, and operators",
+              "Control flow and loops",
+              "Functions and modules",
+              "File handling"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "Frontend Development with HTML and CSS",
+            "content": [
+              "HTML structure and elements",
+              "CSS styling and selectors",
+              "Responsive web design",
+              "CSS frameworks (e.g., Bootstrap)",
+              "Building user interfaces"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "Introduction to Django",
+            "content": [
+              "Django project setup and configuration",
+              "URL routing and views",
+              "Django models and database integration",
+              "Templates and template tags",
+              "Static files and media handling"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Database Integration",
+            "content": [
+              "Database models and relationships",
+              "Querying with Django ORM",
+              "Database migrations",
+              "Working with PostgreSQL",
+              "Data manipulation and validation"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "User Authentication and Authorization",
+            "content": [
+              "User registration and login",
+              "Password hashing and security",
+              "Role-based access control",
+              "User profiles and customization",
+              "Social media authentication"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "RESTful APIs with Django Rest Framework",
+            "content": [
+              "Introduction to RESTful APIs",
+              "Building APIs with Django Rest Framework",
+              "Serializers and viewsets",
+              "Authentication and permission classes",
+              "API documentation and testing"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "Frontend Framework Integration",
+            "content": [
+              "Integrating frontend frameworks (e.g., React, Vue)",
+              "API consumption in frontend applications",
+              "State management in frontend",
+              "Building dynamic web pages",
+              "Frontend optimization techniques"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Deployment and DevOps",
+            "content": [
+              "Deployment strategies",
+              "Continuous integration and deployment (CI/CD)",
+              "Server configuration and hosting",
+              "Scaling and load balancing",
+              "Monitoring and logging"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Testing and Debugging",
+            "content": [
+              "Unit testing with Django",
+              "Test-driven development (TDD)",
+              "Debugging Django applications",
+              "End-to-end testing with frameworks",
+              "Code quality and linting"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Advanced Django Concepts",
+            "content": [
+              "Django signals and async tasks",
+              "Working with Django forms",
+              "Caching and performance optimization",
+              "Custom middleware and decorators",
+              "Handling file uploads"
+            ]
+          },
+          {
+            "weekNumber": 11,
+            "topic": "Security and Performance",
+            "content": [
+              "Web application security best practices",
+              "Preventing common vulnerabilities",
+              "Performance optimization techniques",
+              "Caching and CDNs",
+              "Code bundling and minification"
+            ]
+          },
+          {
+            "weekNumber": 12,
+            "topic": "Final Project and Portfolio",
+            "content": [
+              "Planning and executing a fullstack project",
+              "Building a scalable web application",
+              "Final project presentation",
+              "Creating a developer portfolio",
+              "Job search strategies for fullstack developers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "courseName": "Project Management",
+        "courseOverview": "The course covers project management principles and practices, including project planning, team collaboration, risk management, and project execution. Students will gain essential skills to lead successful projects from start to finish. By the end of the course, participants will be well-equipped to handle the complexities of project management and ensure project success.",
+        "description": "Acquire vital project management skills and lead successful projects from inception to completion. Develop practical expertise in project planning, scheduling, risk management, and communication, navigating the complexities of project execution.\n\nThis comprehensive course empowers you with essential knowledge in project management, enabling you to take charge of projects with confidence. From laying the groundwork in project planning to effectively managing schedules and mitigating risks, you'll learn the tools and techniques to ensure project success. Effective communication strategies will also be emphasized, ensuring seamless collaboration and stakeholder engagement throughout the project lifecycle. By the end of the course, you'll possess the expertise needed to lead projects efficiently and drive them to successful outcomes. So, enroll now and embark on a rewarding journey as a skilled project manager.",
+        "instructor": "Akorede Olarinde",
+        "workedAt": "Amazon",
+        "avatar":"korede_arms.png",
+        "videoLink":"https://www.youtube.com/embed/5cO5nHmMxrw",
+        "productCard":{
+          "duration": "110 hours",
+          "level": "intermediate",
+          "course":"10 modules",
+          "project": "1 Portfolio",
+          "downloadLink":"",
+          "price":"NGN 180,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to Project Management",
+            "content": [
+              "Definition of project management",
+              "Key project management concepts",
+              "Project management methodologies",
+              "Project lifecycle phases",
+              "Project success criteria"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "Project Initiation and Planning",
+            "content": [
+              "Defining project goals and objectives",
+              "Stakeholder identification and analysis",
+              "Creating project charters",
+              "Project scope and requirements gathering",
+              "Creating a project plan"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "Project Scheduling and Resource Management",
+            "content": [
+              "Creating project schedules",
+              "Identifying project dependencies",
+              "Resource allocation and management",
+              "Gantt charts and critical path analysis",
+              "Resource leveling and optimization"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Risk Management",
+            "content": [
+              "Identifying and assessing project risks",
+              "Risk response planning",
+              "Risk mitigation and contingency planning",
+              "Monitoring and controlling project risks",
+              "Risk documentation and reporting"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "Project Execution and Control",
+            "content": [
+              "Managing project teams",
+              "Monitoring project progress",
+              "Managing project changes",
+              "Quality control and assurance",
+              "Project communication and reporting"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "Agile Project Management",
+            "content": [
+              "Introduction to Agile methodologies",
+              "Scrum framework",
+              "Kanban and Lean principles",
+              "User stories and backlog management",
+              "Sprint planning and review"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "Project Stakeholder Management",
+            "content": [
+              "Identifying project stakeholders",
+              "Stakeholder analysis and engagement",
+              "Managing stakeholder expectations",
+              "Building effective stakeholder relationships",
+              "Handling stakeholder conflicts"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Project Communication and Collaboration",
+            "content": [
+              "Creating a project communication plan",
+              "Effective communication strategies",
+              "Team collaboration tools and techniques",
+              "Virtual team management",
+              "Project documentation and knowledge sharing"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Project Quality Management",
+            "content": [
+              "Quality planning and standards",
+              "Quality assurance and control",
+              "Performing quality audits",
+              "Continuous improvement practices",
+              "Quality metrics and reporting"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Project Procurement and Contract Management",
+            "content": [
+              "Procurement planning and strategy",
+              "Vendor selection and evaluation",
+              "Contract types and negotiation",
+              "Contract administration and closure",
+              "Supplier relationship management"
+            ]
+          },
+          {
+            "weekNumber": 11,
+            "topic": "Project Closure and Lessons Learned",
+            "content": [
+              "Project closure activities",
+              "Finalizing project deliverables",
+              "Conducting project reviews",
+              "Capturing lessons learned",
+              "Post-project evaluation and reporting"
+            ]
+          },
+          {
+            "weekNumber": 12,
+            "topic": "Final Project and Portfolio",
+            "content": [
+              "Planning and executing a project",
+              "Applying project management principles",
+              "Final project presentation",
+              "Creating a project management portfolio",
+              "Career paths in project management"
+            ]
+          }
+        ]
+      },{
+        "id": 5,
+        "courseName": "3D Design and Modeling",
+        "courseOverview": "The course covers 3D design and modeling principles, encompassing 3D software tools, modeling techniques, texturing, lighting, and rendering. Students will gain practical knowledge to bring their creativity to life in mesmerizing three-dimensional creations. By course completion, participants will be well-versed in the art of 3D design and modeling.",
+        "description": "Embark on an exhilarating journey into the realm of 3D design and modeling. Discover a range of powerful 3D software tools, master modeling techniques, and unleash your creativity to craft stunning visual effects. Dive into the art of bringing your imagination to life in mesmerizing three-dimensional creations.\n\nThis comprehensive course will guide you through the intricacies of 3D design, from understanding different software platforms to honing your skills in modeling techniques. Learn to manipulate shapes, textures, and lighting to breathe life into your creations, creating captivating visual effects that leave a lasting impact. By the end of the course, you'll be equipped with the expertise to transform your ideas into awe-inspiring 3D masterpieces. So, join us now and embark on a rewarding journey into the fascinating world of 3D design and modeling.",
+        "instructor": "Abidemi Rasheed",
+        "workedAt": "Apple",
+        "avatar":"bidemi_arms.png",
+        "videoLink":"https://www.youtube.com/embed/uxMPIK_R9GA",
+        "productCard":{
+          "duration": "140 hours",
+          "level": "beginner",
+          "course":"12 modules",
+          "project": "1 Portfolio",
+          "downloadLink":"",
+          "price":"NGN 200,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to 3D Design",
+            "content": [
+              "Overview of 3D design and its applications",
+              "Introduction to 3D software tools",
+              "Understanding 3D space and coordinate systems",
+              "Basic 3D modeling techniques",
+              "Working with primitives and objects"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "Modeling Techniques",
+            "content": [
+              "Polygonal modeling",
+              "NURBS modeling",
+              "Subdivision surface modeling",
+              "Creating complex shapes and forms",
+              "Modeling for animation and rigging"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "Texturing and UV Mapping",
+            "content": [
+              "Applying textures to 3D models",
+              "UV mapping techniques",
+              "Texture coordinates and mapping tools",
+              "Procedural texturing",
+              "Creating realistic materials"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Lighting and Shading",
+            "content": [
+              "Understanding 3D lighting principles",
+              "Types of lights and their properties",
+              "Shading models and materials",
+              "Creating realistic lighting setups",
+              "Global illumination and HDR lighting"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "Animation and Rigging",
+            "content": [
+              "Keyframe animation",
+              "Character rigging techniques",
+              "Inverse kinematics and constraints",
+              "Animating objects and cameras",
+              "Animating with curves and paths"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "Particle Systems and Simulations",
+            "content": [
+              "Creating particle effects",
+              "Simulating physics-based animations",
+              "Fluid and smoke simulations",
+              "Cloth and hair simulations",
+              "Controlling and tweaking simulations"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "Rendering and Output",
+            "content": [
+              "Rendering techniques and settings",
+              "Render engines and presets",
+              "Optimizing render times",
+              "Compositing and post-processing",
+              "Exporting and output formats"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Advanced Modeling",
+            "content": [
+              "Hard surface modeling",
+              "Organic modeling",
+              "Digital sculpting techniques",
+              "Modeling for visual effects",
+              "Model optimization and cleanup"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Advanced Texturing and Materials",
+            "content": [
+              "Procedural texturing techniques",
+              "Advanced material creation",
+              "Texture painting and projection",
+              "Creating realistic surfaces",
+              "Working with material libraries"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Advanced Lighting and Rendering",
+            "content": [
+              "Advanced lighting setups",
+              "Advanced shading and materials",
+              "Global illumination techniques",
+              "Physical-based rendering (PBR)",
+              "Realistic rendering workflows"
+            ]
+          },
+          {
+            "weekNumber": 11,
+            "topic": "Specialized 3D Techniques",
+            "content": [
+              "Architectural visualization",
+              "Product design and visualization",
+              "Character modeling and animation",
+              "Motion graphics and visual effects",
+              "Simulation-driven design"
+            ]
+          },
+          {
+            "weekNumber": 12,
+            "topic": "Final Project and Portfolio",
+            "content": [
+              "Planning and executing a 3D project",
+              "Creating a 3D portfolio",
+              "Final project presentation",
+              "Career paths in 3D design and modeling",
+              "Industry trends and future developments"
+            ]
+          }
+        ]
+      }
+    ]
+  }
