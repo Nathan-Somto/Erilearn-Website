@@ -16,9 +16,15 @@ const formatLink = (text:string)=>
           return courseLink + "/2";
         case 'Full Stack Python':
           return courseLink + "/3";
+        case 'Get Started':
+          return 'https://www.bit.ly/ERILEARN';
+        case 'Faq':
+          return 'faqs';
         default:
            return '';
     }
   }
-
-  export {formatLink}
+  const handleEnrollClick = () => {
+    window.location.href = 'https://www.bit.ly/ERILEARN';
+  };
+  export {formatLink, handleEnrollClick}

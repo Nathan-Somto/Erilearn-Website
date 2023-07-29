@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import data from "@/data/data.json";
 import { motion } from "framer-motion";
+import { handleEnrollClick } from "@/utils";
 type Props = {};
 
 const Perks = (props: Props) => {
@@ -37,7 +38,7 @@ const Perks = (props: Props) => {
         <div className="flex flex-col gap-6 text-[1.1rem] font-poppins">
           <p className="mx-auto lg:mx-0 w-[80%] opacity-80">{Perks.para1}</p>
           <p className="mx-auto lg:mx-0 w-[80%] opacity-80">{Perks.para2}</p>
-          <button className="primary-btn lg:mx-0 mx-auto w-[195px]">
+          <button onClick={handleEnrollClick} className="primary-btn lg:mx-0 mx-auto w-[195px]">
             {Perks.btn}
           </button>
         </div>

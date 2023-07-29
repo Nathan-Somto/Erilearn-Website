@@ -31,52 +31,54 @@ const NavItem = ({ text, isBtn, withDropdown, dropdownContent }: Props) => {
   return (
     <li>
       {/* Style based on hover */}
-      <Link
-        href={"/" + formatLink(text)}
-        className={`relative mb-1 ${
-          isBtn ? "primary-btn" : "flex items-center gap-1"
-        }
-        ${
-        openDropdown ?'opacity-50': ""
-        }
+      {isBtn ? (
+        <a href={formatLink(text)} className="primary-btn">
+          {text}
+        </a>
+      ) : (
+        <Link
+          href={"/" + formatLink(text)}
+          className={`relative mb-1 
+           flex items-center gap-1 ${openDropdown ? "opacity-50" : ""}
         `}
-        
-        onMouseOver={handleHover}
-      >
-        <span>{text}</span>
-        {withDropdown && (
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <mask
-                id="mask0_21_219"
-                /*     style="mask-type:alpha" */
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
+          onMouseOver={handleHover}
+          // if it is with dropdown i want when you hover out of the dropdown itself that you close it.
+          onMouseLeave={withDropdown ? undefined : handleHover}
+        >
+          <span>{text}</span>
+          {withDropdown && (
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                viewBox="0 0 24 24"
+                fill="none"
               >
-                <rect width="24" height="24" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_21_219)">
-                <path
-                  d="M12 15.375L6 9.37501L7.4 7.97501L12 12.575L16.6 7.97501L18 9.37501L12 15.375Z"
-                  fill="#373737"
-                />
-              </g>
-            </svg>
-          </span>
-        )}
-      </Link>
+                <mask
+                  id="mask0_21_219"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="24"
+                  height="24"
+                >
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_21_219)">
+                  <path
+                    d="M12 15.375L6 9.37501L7.4 7.97501L12 12.575L16.6 7.97501L18 9.37501L12 15.375Z"
+                    fill="#373737"
+                  />
+                </g>
+              </svg>
+            </span>
+          )}
+        </Link>
+      )}
       {/* line */}
-      {isHovering && (
-        <AnimatePresence>
+      <AnimatePresence>
+        {isHovering && (
           <motion.div
             key={text}
             exit={{ width: "0", opacity: 0 }}
@@ -84,8 +86,8 @@ const NavItem = ({ text, isBtn, withDropdown, dropdownContent }: Props) => {
             animate={{ width: "100%", opacity: 1 }}
             className="h-[2px] w-full bg-primary"
           ></motion.div>
-        </AnimatePresence>
-      )}
+        )}
+      </AnimatePresence>
       {/* dropdown */}
       {withDropdown && openDropdown && (
         <Dropdown

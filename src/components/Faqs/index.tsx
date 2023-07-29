@@ -130,6 +130,7 @@ const Faqs = (props: Props) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.45, delay: 0.45 }}
+          onClick={() => window.location.href = 'contact'}
           className="primary-btn-outline font-semibold"
         >
           {Faq.bottom.btn}
