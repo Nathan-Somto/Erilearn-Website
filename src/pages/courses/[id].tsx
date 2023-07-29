@@ -1,6 +1,5 @@
 import React from "react";
 import CoursesData from "@/data/course.json";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import CourseFaq from "@/components/CourseFaq";
 import Head from "next/head";
@@ -8,34 +7,15 @@ import Testimonials from "@/components/Testimonials";
 import Faqs from "@/components/Faqs";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { motion } from "framer-motion";
-type Props = {};
+import { handleEnrollClick } from "@/utils";
+import { GetStaticProps } from "next";
+type Props = {
+  course: dataProps<(typeof CoursesData.courses)[0]>
+};
 type dataProps<T> = {
   [P in keyof T]: T[P];
 };
-const CoursePage = (props: Props) => {
-  const [data, setData] = React.useState<null | dataProps<
-    (typeof CoursesData.courses)[0]
-  >>(null);
-  const router = useRouter();
-  React.useEffect(() => {
-    if (router.query.id && typeof router.query.id === "string") {
-      const courseId = +router.query.id;
-      const courseData = CoursesData.courses.find(
-        (item) => item.id === courseId
-      );
-      if (courseData) {
-        setData(courseData);
-      }
-    }
-  }, [router.query.id]);
-
-  if (data === null) {
-    return (
-      <div className="grid place-items-center h-screen w-full">
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
+const CoursePage = ({course: data}: Props) => {
   return (
     <>
       <Head>
@@ -120,7 +100,7 @@ const CoursePage = (props: Props) => {
             <p className="badge">Get Started</p>
             <p>{data.productCard.price}</p>
             <h3>{data.courseName}</h3>
-            <button className="primary-btn-outline w-full ">Enroll Now</button>
+            <button className="primary-btn-outline w-full " onClick={handleEnrollClick}>Enroll Now</button>
             <div className="grid content-center  grid-cols-2 text-[#342423] h-[150px]  text-[14px] gap-x-[50px] font-poppins gap-y-[20px]  border-t !mt-[30px] pt-[20px]  border-t-[#B7B7B9]">
               <p>
                 <span className="text-[#373737] font-semibold text-[16px]">
@@ -220,3 +200,33 @@ const CoursePage = (props: Props) => {
 };
 
 export default CoursePage;
+
+export async function getStaticPaths() {
+  const coursesData = await import('@/data/course.json');
+  const courseIds = coursesData.courses.map((course) => course.id.toString());
+  const paths = courseIds.map((id) => ({
+    params: { id },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export  const getStaticProps: GetStaticProps<Props | {notFound: true}>  = async ({ params }) => {
+  // Fetch the data for a specific course based on the provided ID
+
+  if(params === undefined || typeof params.id !== 'string')
+  {
+    return { notFound: true };
+  }
+  const courseId = parseInt(params.id);
+  const coursesData = await import('@/data/course.json');
+  const course = coursesData.courses.find((course) => course.id === courseId);
+
+  if (!course) {
+    return { notFound: true };
+  }
+
+  return {
+    props: { course },
+  };
+}
