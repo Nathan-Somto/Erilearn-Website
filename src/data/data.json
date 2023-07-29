@@ -22,48 +22,54 @@
     "card": [
       {
         "title": "Full Stack Javascript",
-        "teacher": "John Doe",
         "image": "fullstack-js.png",
-        "level": "Beginner",
-        "modules": "25",
-        "avatar": "",
-        "price": "29,500"
+        "level": "Level 2",
+        "modules": "40",
+        "instructor": "Taiwo Joseph",
+        "workedAt": "Google",
+        "avatar":"taiwo_arms.png",
+        "job":"Software Engineer"
       },
       {
         "title": "Full Stack Python",
-        "teacher": "Jane Doe",
         "image": "fullstack-python.png",
-        "level": "Intermiedate",
+        "level": "Level 3",
         "modules": "20",
-        "avatar": "",
-        "price": "29,000"
+        "instructor": "Timilehin Oluwasegun",
+        "workedAt": "Facebook",
+        "avatar":"timi_sitting.png",
+        "job":"Software Engineer"
+        
       },
       {
         "title": "Product Design",
-        "teacher": "Mike Doe",
         "image": "product-design.png",
-        "level": "Beginner",
+        "level": "Level 1",
         "modules": "35",
-        "avatar": "",
-        "price": "31,000"
+        "instructor": "Ope Akintomade",
+        "avatar":"ope.png",
+        "workedAt": "Apple",
+        "job":"Product Designer"
       },
       {
         "title": "Product Management",
-        "teacher": "Mina Doe",
         "image": "product-management.png",
-        "level": "Advanced",
+        "level": "Level 4",
         "modules": "40",
-        "avatar": "",
-        "price": "33,000"
+        "instructor": "Akorede Olarinde",
+        "workedAt": "Amazon",
+        "avatar":"korede_arms.png",
+        "job":"Product Manager"
       },
       {
         "title": "3D",
-        "teacher": "Vanessa Doe",
         "image": "3D.png",
-        "level": "Beginner",
+        "level": "Level 5",
         "modules": "55",
-        "avatar": "",
-        "price": "28,500"
+        "instructor": "Abidemi Rasheed",
+        "workedAt": "Apple",
+        "avatar":"bidemi_arms.png",
+        "job":"3d Modeler"
       }
     ]
   },

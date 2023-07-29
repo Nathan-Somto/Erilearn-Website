@@ -2,6 +2,7 @@ import React from "react";
 import data from "@/data/data.json";
 import Image from 'next/image';
 import { motion } from "framer-motion";
+import { handleEnrollClick } from "@/utils";
 type Props = {};
 
 const Hero = (props: Props) => {
@@ -22,7 +23,7 @@ const Hero = (props: Props) => {
           {hero.paragraph}
         </p>
         <div className="mt-8 flex flex-col gap-[12px] max-w-[500px] mx-auto justify-center items-center lg:max-w-full lg:justify-start lg:flex-row">
-          <button className="primary-btn w-[225px] ">Enroll now</button>
+          <button className="primary-btn w-[225px] " onClick={handleEnrollClick}>Enroll now</button>
           <button className="primary-btn bg-transparent rounded-[8px]  w-[225px] text-[#3E3D3D] border-2 flex items-center gap-2 border-solid border-[#CFCFD1] ">
             <span>
             <svg

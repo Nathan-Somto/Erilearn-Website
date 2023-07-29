@@ -9,6 +9,8 @@
         "instructor": "Ope Akintomade",
         "avatar":"ope.png",
         "workedAt": "Apple",
+        "meta_description": "Master Product Design principles with Erilearn's comprehensive course.",
+        "meta_keywords": "Erilearn, Product Design Course, UX Design, UI Design, Prototyping, User-Centered Design",
         "productCard":{
           "duration": "80 hours",
           "level": "beginner",
@@ -169,6 +171,8 @@
           "downloadLink":"",
           "price":"NGN 150,000"
         },
+        "meta_description": "Master Fullstack JavaScript development with Erilearn's comprehensive course.",
+        "meta_keywords": "Erilearn, Fullstack JavaScript Course, Web Development, Frontend, Backend, React, Node.js, Express.js",
         "weeks": [
           {
             "weekNumber": 1,
@@ -313,6 +317,8 @@
         "workedAt": "Facebook",
         "avatar":"timi_sitting.png",
         "videoLink":"https://www.youtube.com/embed/8KaJRw-rfn8",
+        "meta_description": "Master Fullstack Python development with Erilearn's comprehensive course.",
+        "meta_keywords": "Erilearn, Fullstack Python Course, Web Development, Frontend, Backend, Django, Database, Python",
         "productCard":{
           "duration": "95 hours",
           "level": "beginner",
@@ -465,6 +471,8 @@
         "workedAt": "Amazon",
         "avatar":"korede_arms.png",
         "videoLink":"https://www.youtube.com/embed/5cO5nHmMxrw",
+        "meta_description": "Unlock your potential in Product Management with Erilearn's comprehensive course.",
+        "meta_keywords": "Erilearn, Product Management Course, Product Manager, Agile, Product Strategy, Project Management",
         "productCard":{
           "duration": "110 hours",
           "level": "intermediate",
@@ -616,6 +624,8 @@
         "workedAt": "Apple",
         "avatar":"bidemi_arms.png",
         "videoLink":"https://www.youtube.com/embed/uxMPIK_R9GA",
+        "meta_description": "Embark on a journey into the world of 3D Design and modeling with Erilearn's comprehensive course.",
+        "meta_keywords": "Erilearn, 3D Design Course, 3D Modeling, Visual Effects, Texturing, Rendering",
         "productCard":{
           "duration": "140 hours",
           "level": "beginner",

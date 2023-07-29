@@ -1,25 +1,28 @@
 import React from "react";
 import Image from "next/image";
+import { handleEnrollClick } from "@/utils";
+import Link from "next/link";
 type Props = {
   image: string;
   title: string;
   avatar: string;
   level: string;
   modules: string;
-  teacher: string;
-  price: string;
+  instructor: string;
+  workedAt: string;
+  job: string;
 };
 
-const Card = (props: Props) => {
+const CoursesCard = (props: Props) => {
   return (
-    <div className="h-[480px] bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[350px] flex-shrink-0  shadow-[1px_4px_12px_rgb(204,204,204)] rounded-[12px] overflow-hidden">
+    <Link href={`/courses/${props.level.replace('Level','').trim()}`}  className="h-[565px] block bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[80%] sm:w-[380px]  flex-shrink-0  shadow-[1px_4px_12px_rgb(204,204,204)] rounded-[12px] overflow-hidden">
       <Image
         src={"/" + props.image}
-        height={200}
-        width={350}
+        height={178}
+        width={380}
         alt={props.title}
       />
-      <div className="flex px-6 mt-6 justify-between items-center ">
+      <div className="flex px-6 mt-4 justify-between items-center ">
         <p className="bg-[#FCDBDA] text-[#342423] font-semibold rounded-[6px] px-5 py-1">
           {props.level}
         </p>
@@ -51,27 +54,37 @@ const Card = (props: Props) => {
         </p>
       </div>
       <div className="px-6 ">
-        <h3 className="border-b border-gray-500 text-2xl border-solid mt-4 mb-3 pb-2">
+        <h3 className="border-b border-gray-500 text-[#373737] text-2xl font-semibold font-poppins border-solid my-5 pb-3">
           {props.title}
         </h3>
-        <div>
-          <div className="flex items-center mt-3 gap-4">
+        <div className="h-[85px] text-[#373737]">
+          <div className="flex  mt-6 items-center mb-2 gap-4 font-poppins">
             <img
               src={props.avatar}
-              className="border-[#FCDBDA] border border-solid rounded-[50%] h-[30px] w-[30px]"
+              className="border-[#FCDBDA] border-2 border-solid object-cover rounded-[50%] h-[52px] w-[52px]"
             />
-            <h4>{props.teacher}</h4>
+            <h4 className="font-medium text-[1.1rem]">{props.instructor}</h4>
           </div>
-          <div className="text-gray-800 flex justify-between items-center font-medium mt-3 ">
-            <p>
-              NGN <span className="font-semibold">{props.price}</span>
-            </p>{" "}
-            <button className="primary-btn-outline">Enroll Now</button>
-          </div>
+          <p>
+            {" "}
+            <span>{props.job}</span> at{" "}
+            <span className="underline text-primary">{props.workedAt}</span>
+          </p>
+        </div>
+        <div className="text-gray-800 flex  items-center font-medium mt-4 ">
+          <button
+            className="primary-btn-outline w-full"
+            onClick={(e)=>{
+              e.preventDefault()
+              handleEnrollClick()
+            }}
+          >
+            Enroll Now
+          </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
-export default Card;
+export default CoursesCard;
