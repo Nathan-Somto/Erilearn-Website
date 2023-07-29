@@ -20,6 +20,8 @@ const CoursePage = ({course: data}: Props) => {
     <>
       <Head>
         <title>Erilearn - {data.courseName}</title>
+        <meta name="description" content={data.meta_description}/>
+        <meta name="keywords" content={data.meta_keywords} />
       </Head>
       <div className="">
         <header className="flex  flex-col  border-b-[#B7B7B9] border-b pb-[20px] justify-between  w-[90%] mx-auto space-y-[50px] lg:space-y-0  lg:flex-row  items-center min-h-screen">
