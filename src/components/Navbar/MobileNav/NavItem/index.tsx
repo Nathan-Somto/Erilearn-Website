@@ -1,23 +1,23 @@
 import { formatLink } from "@/utils";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import Dropdown from "../../Dropdown";
 
 type Props =
   | {
       text: string;
-      withDropdown?: false;
+      withDropdown?: boolean;
       dropdownContent?: never;
     }
   | {
       text: string;
-      withDropdown: true;
+      withDropdown: boolean;
       dropdownContent: string[];
     };
 
 const NavItem = ({ text, withDropdown, dropdownContent }: Props) => {
   const [openDropdown, setOpenDropdown] = useState(false);
-  const handleClick = (e) => {
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (withDropdown) {
       setOpenDropdown((prev) => !prev);

@@ -7,13 +7,13 @@ type Props =
   | {
       text: string;
       isBtn: boolean;
-      withDropdown?: false;
+      withDropdown?: boolean;
       dropdownContent?: never;
     }
   | {
       text: string;
       isBtn: boolean;
-      withDropdown: true;
+      withDropdown: boolean;
       dropdownContent: string[];
     };
 
