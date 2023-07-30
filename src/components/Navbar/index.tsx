@@ -42,7 +42,7 @@ const Navbar = () => {
           ? { y: 0, opacity: 1, backgroundColor: "white" }
           : { backgroundColor: "transparent" }
       }
-      transition={{ duration: 0.55, ease: "easeIn", type: "spring" }}
+      transition={{ duration: 0.55, ease: "easeIn"}}
       className={`fixed top-0 h-[100px] 
        justify-between py-3 flex items-center left-0 right-0 w-full px-[5%] z-[5000] `}
     >
