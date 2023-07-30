@@ -13,6 +13,7 @@ const Perks = (props: Props) => {
         initial={{ x: "-100%",opacity:0 }}
         whileInView={{ x: "0",opacity:1 }}
         transition={{ duration: 0.65, delay: 0.2, ease:"easeIn" }}
+        viewport ={{once: true}}
       >
         <Image
           src={"/ima_arm.png"}
@@ -26,6 +27,7 @@ const Perks = (props: Props) => {
         initial={{ x: "100%", opacity:0 }}
         whileInView={{ x: "0" ,opacity:1 }}
         transition={{ duration: 0.65, delay: 0.2, ease:'easeIn' }}
+        viewport ={{once: true}}
         className="lg:w-[50%] flex-shrink-0"
       >
         <h1

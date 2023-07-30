@@ -13,6 +13,7 @@ const WhyUs = (props: Props) => {
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration:0.65, ease:"easeIn"}}
+        viewport ={{once: true}}
        className="text-center">
         <h3 className="  mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">{WhyUs.heading3}</h3>
         <h1 className=" text-[30px] md:text-[42px]  text-secondary">{WhyUs.heading1}</h1>
@@ -23,6 +24,7 @@ const WhyUs = (props: Props) => {
             initial={{ scale: 0, opacity: 0 }}
             transition={{ delay: (index * 0.03) + 0.5, duration: 0.65 }}
             whileInView={{ scale: 1, opacity: 1 }}
+            viewport ={{once: true}}
             key={index}
           >
             <Card {...item} index={index}  />

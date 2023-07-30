@@ -26,6 +26,7 @@ const Testimonials = (props: Props) => {
         initial={{ x: "-100%", opacity: 0 }}
         whileInView={{ x: "0%", opacity: 1 }}
         transition={{ duration: 0.65, ease: "easeIn" }}
+        viewport ={{once: true}}
       >
         <h3 className="  mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">
           {testimonials.heading3}
@@ -39,6 +40,7 @@ const Testimonials = (props: Props) => {
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: [0,0,0,0,0,1] }}
           transition={{ duration: 0.65, ease: "easeIn" }}
+          viewport ={{once: true}}
           className="rounded-[40px] flex-shrink-0 w-[80%]  max-w-[500px] h-[320px] relative overflow-hidden"
         >
           <Image

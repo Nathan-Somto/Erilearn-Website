@@ -16,6 +16,7 @@ const Faqs = (props: Props) => {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.65, ease: "easeIn" }}
+        viewport ={{once: true}}
         className="uppercase text-[30px] md:text-[42px] mb-[40px] text-secondary text-center"
       >
         {Faq.heading1}
@@ -24,6 +25,7 @@ const Faqs = (props: Props) => {
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: "0%", opacity: 1 }}
         transition={{ duration: 0.65, ease: "easeIn" }}
+        viewport ={{once: true}}
         className="mb-[50px]"
       >
         <h3 className="text-primary font-bold mb-4 text-[18px]">
@@ -35,6 +37,7 @@ const Faqs = (props: Props) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.55, delay: 0.65, ease: "easeIn" }}
+            viewport ={{once: true}}
             className="text-primary "
           >
             {Faq.heading2Span}
@@ -48,6 +51,7 @@ const Faqs = (props: Props) => {
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
+            viewport ={{once: true}}
             transition={{
               duration: 0.65,
               ease: "easeIn",
@@ -122,6 +126,7 @@ const Faqs = (props: Props) => {
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.55, ease: "easeIn" }}
+        viewport ={{once: true}}
         className="text-secondary mt-12"
       >
         <h2>{Faq.bottom.heading2}</h2>
@@ -130,6 +135,7 @@ const Faqs = (props: Props) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.45, delay: 0.45 }}
+          viewport ={{once: true}}
           onClick={() => window.location.href = 'contact'}
           className="primary-btn-outline font-semibold"
         >

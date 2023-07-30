@@ -12,6 +12,7 @@ const Steps = (props: Props) => {
         initial={{ x: "-100%" }}
         whileInView={{ x: "0%" }}
         transition={{ duration: 0.65, ease: "easeIn" }}
+        viewport ={{once: true}}
       >
         <h3 className="mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">
           {Steps.heading3}
@@ -36,6 +37,7 @@ const Steps = (props: Props) => {
                     delay: index * 0.25 + 0.25,
                     ease: "easeIn",
                   }}
+                  viewport ={{once: true}}
                   className="text-[#C7403C] font-bold  lg:text-[14px] mb-2 pt-2"
                 >
                   0{index + 1}
@@ -45,6 +47,7 @@ const Steps = (props: Props) => {
                     initial={{ scaleY: 0 }}
                     whileInView={{ scaleY: 1 }}
                     transition={{ duration: 0.55, delay: index * 0.03 + 0.25 }}
+                    viewport ={{once: true}}
                     className="w-[1px] mx-auto h-[100px] bg-[#F48885]"
                   ></motion.div>
                 )}
@@ -53,7 +56,7 @@ const Steps = (props: Props) => {
                     duration: 0.55,
                     delay: (index * 0.15) + 0.25,
                     ease: "easeIn",
-                  }} initial={{opacity:0.5}} whileInView={{opacity:1}} className="w-[80%]">
+                  }} initial={{opacity:0.5}} whileInView={{opacity:1}} viewport ={{once: true}} className="w-[80%]">
                 <h2 className="text-[20px] text-secondary font-semibold mb-2 p-0">
                   {item.heading2}
                 </h2>
@@ -68,6 +71,7 @@ const Steps = (props: Props) => {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.55, ease: "easeIn" ,delay:0.2 }}
+          viewport ={{once: true}}
           className="h-[390px] relative overflow-hidden min-w-[300px] w-[80%] max-w-[400px] rounded-t-[90px] rounded-b-[120px]"
         >
           <Image
