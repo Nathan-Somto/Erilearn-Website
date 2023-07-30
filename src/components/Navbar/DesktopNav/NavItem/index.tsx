@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Dropdown from "../../Dropdown";
 import { formatLink } from "@/utils";
@@ -28,6 +28,11 @@ const NavItem = ({ text, isBtn, withDropdown, dropdownContent }: Props) => {
     }
     setIsHovering((prevState) => !prevState);
   };
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    if (withDropdown) {
+      e.preventDefault();
+    }
+  };
   return (
     <li>
       {/* Style based on hover */}
@@ -41,6 +46,7 @@ const NavItem = ({ text, isBtn, withDropdown, dropdownContent }: Props) => {
           className={`relative mb-1 
            flex items-center gap-1 ${openDropdown ? "opacity-50" : ""}
         `}
+          onClick={handleClick}
           onMouseOver={handleHover}
           // if it is with dropdown i want when you hover out of the dropdown itself that you close it.
           onMouseLeave={withDropdown ? undefined : handleHover}
