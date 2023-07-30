@@ -30,7 +30,6 @@ const Footer = (props: Props) => {
           variants={containerVariants}
           initial={"hidden"}
           whileInView={"visible"}
-          viewport ={{once: true}}
           className="grid grid-cols gap-4"
         >
           <Link
@@ -112,7 +111,6 @@ const Footer = (props: Props) => {
             variants={containerVariants}
             initial={"hidden"}
             whileInView={"visible"}
-            viewport ={{once: true}}
             className="gap grid-cols grid gap-4 pt-3 content-start"
             key={index}
           >
@@ -133,7 +131,6 @@ const Footer = (props: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.55, ease: "easeIn" }}
-        viewport ={{once: true}}
         className="border-t overflow-y-hidden border-solid text-center py-2 bg-[#FDF5F5] px-[5%]"
       >
         <p>All rights Reserved &copy; Erilearn</p>

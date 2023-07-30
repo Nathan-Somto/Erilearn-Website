@@ -18,18 +18,22 @@ const ContactPage = (props: Props) => {
       </Head>
       <div className="min-h-[calc(100vh+96px)] -mb-[50px] bg-[#FDF5F5] -mt-[96px] pt-[96px]">
         <header className="text-secondary text-center mx-auto overflow-hidden h-[300px] space-y-8 max-w-[600px] flex flex-col justify-center">
-          <motion.h1 initial={{y:350,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.85, ease:"easeIn"}} className="xl:text-[72px] text-[35px] sm:text-5xl">
+          <motion.h1 initial={{y:350,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.55, ease:"easeIn"}} className="xl:text-[72px] text-[35px] sm:text-5xl">
             {contact.heading1}
           </motion.h1>
-          <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.95,duration:0.55, ease:"easeIn"}} className="opacity-80 text-[1.2rem] w-[80%] font-medium font-poppins mx-auto leading-[35px]">
+          <motion.p initial={{opacity:0,scale: 0}} animate={{opacity:1, scale:1}} transition={{delay:0.75,duration:0.55, ease:"easeIn"}} className="opacity-80 text-[1.2rem] w-[80%] font-medium font-poppins mx-auto leading-[35px]">
             {contact.para}
           </motion.p>
         </header>
         <main>
           <section className="flex items-center mt-[100px] gap-[50px] justify-center flex-wrap">
-            {contact.card.map((item, _) => (
-              <div
+            {contact.card.map((item, index) => (
+              <motion.div
+                initial={{scale: 0, opacity:0}}
+                whileInView ={{scale: 1, opacity: 1}}
+                transition={{delay:0.15 * index + 0.25, duration: 0.45}}
                 key={item.id}
+                viewport={{once: true}}
                 className="flex hover:scale-110 ease-out duration-300 transition-all text-secondary text-center justify-center bg-white flex-col h-[350px] gap-8 w-[80%] max-w-[350px] px-8 py-4 rounded-[8px] shadow-[1px_4px_12px_rgba(200,200,200,0.5)]"
               >
                 <div className="text-[#F7A6A4]  bg-[#FFF3F3] mx-auto w-[52px] h-[52px] rounded-[50%]  flex items-center justify-center">
@@ -86,7 +90,7 @@ const ContactPage = (props: Props) => {
                     </svg>
                   )}
                 </div>
-                <h2>{item.heading}</h2>
+                <h2 className="text-[1.5rem] sm:text-[1.8rem] lg:text-[2.5rem]">{item.heading}</h2>
                 <div>
                   <p className="opacity-80 font-medium">{item.para}</p>
                   <Link
@@ -96,7 +100,7 @@ const ContactPage = (props: Props) => {
                     {item.linkText}
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </section>
           <Formik
