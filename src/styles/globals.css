@@ -2,41 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  html,body{
+  html,
+  body {
     @apply overflow-x-hidden;
   }
-  h1{
-    @apply text-5xl font-semibold; 
+  h1 {
+    @apply text-5xl font-semibold;
   }
-  h2{
+  h2 {
     @apply text-4xl;
   }
-  h3{
-    @apply text-3xl
+  h3 {
+    @apply text-3xl;
   }
 }
-@layer components{
-  .primary-btn{
+@layer components {
+  .primary-btn {
     @apply bg-[#ca4c48] px-12  py-4 rounded-lg hover:opacity-80 transition-all ease-out duration-300 text-white;
   }
-  .primary-btn-outline{
+  .primary-btn-outline {
     @apply border-[#ca4c48] border border-solid px-6 py-3 rounded-lg text-[#ca4c48] hover:bg-[#ca4c48] hover:text-[white] transition-all ease-out duration-300;
   }
-  .input{
+  .input {
     @apply py-4 px-8 outline-none bg-white rounded-[5px] border border-solid border-gray-400 text-[#5D5D61];
   }
-  .input-error{
-    @apply  border-[#ca4c48] focus:border-[#ca4c48] active:border-[#ca4c48];
+  .input-error {
+    @apply border-[#ca4c48] focus:border-[#ca4c48] active:border-[#ca4c48];
   }
-  .badge{
+  .badge {
     @apply bg-[#FCDBDA] text-[#501A18] py-2 px-3 rounded-[8px] inline-block font-semibold;
   }
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-.swiper-slide{
-  width:128px;
+.swiper-slide {
+  width: 128px;
+}
+.neon-text {
+  text-shadow: 0px 0px 5px white, 0 0 8px white, 0 0 10px white,
+    0 0 22px #f54a44, 0 0 42px #ef4d48, 0 0 92px #ef4d48, 0 0 102px #ef4d48,
+    0 0 151px #ef4d48;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
 }
