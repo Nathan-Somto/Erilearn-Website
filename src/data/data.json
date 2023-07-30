@@ -6,7 +6,8 @@
       "Full Stack Javascript",
       "Full Stack Python",
       "Product Management",
-      "3D"
+      "3D",
+      "Data Science"
     ]
   },
   "hero": {
@@ -70,6 +71,16 @@
         "workedAt": "Apple",
         "avatar":"bidemi_arms.png",
         "job":"3d Modeler"
+      },
+      {
+        "title": "Data Science",
+        "image": "data-science.jpg",
+        "level": "Level 6",
+        "modules": "45",
+        "instructor": "Abidemi Rasheed",
+        "workedAt": "IBM",
+        "avatar":"bidemi_arms.png",
+        "job":"Data Scientist"
       }
     ]
   },

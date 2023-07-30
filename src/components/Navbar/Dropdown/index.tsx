@@ -12,6 +12,21 @@ const Dropdown = ({ dropdownContent, handleMouseOut }: Props) => {
   const size = 28;
   const renderSvg = (content: string) => {
     switch (content) {
+      case "Data Science":
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={size}
+            height={size}
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <path
+              d="M11.9583 4.95866C12.1904 4.95866 12.4129 5.05085 12.577 5.21494C12.7411 5.37903 12.8333 5.60159 12.8333 5.83366V15.167H22.1666C22.3781 15.167 22.5824 15.2436 22.7417 15.3826C22.9011 15.5215 23.0047 15.7135 23.0335 15.923L23.0416 16.042C23.0416 21.8403 18.34 25.9587 12.5416 25.9587C9.75685 25.9587 7.08614 24.8524 5.117 22.8833C3.14787 20.9141 2.04163 18.2434 2.04163 15.4587C2.04163 9.66033 6.15996 4.95866 11.9583 4.95866ZM11.0833 6.75183L10.8395 6.77983C6.53446 7.32816 3.79163 11.0055 3.79163 15.4587C3.79163 17.7793 4.7135 20.0049 6.35444 21.6458C7.99539 23.2868 10.221 24.2087 12.5416 24.2087C16.9948 24.2087 20.671 21.4647 21.2216 17.1608L21.2473 16.917H11.9583C11.7468 16.917 11.5426 16.8404 11.3832 16.7014C11.2239 16.5625 11.1202 16.3705 11.0915 16.161L11.0833 16.042V6.75183ZM15.4583 2.04199C18.2431 2.04199 20.9138 3.14824 22.8829 5.11737C24.852 7.0865 25.9583 9.75722 25.9583 12.542C25.9583 12.7741 25.8661 12.9966 25.702 13.1607C25.5379 13.3248 25.3154 13.417 25.0833 13.417H15.4583C15.2262 13.417 15.0037 13.3248 14.8396 13.1607C14.6755 12.9966 14.5833 12.7741 14.5833 12.542V2.91699C14.5833 2.68493 14.6755 2.46237 14.8396 2.29827C15.0037 2.13418 15.2262 2.04199 15.4583 2.04199ZM16.3333 3.83516V11.667H24.164L24.1371 11.4232C23.8891 9.50491 23.0129 7.72279 21.6452 6.35509C20.2775 4.9874 18.4954 4.11114 16.5771 3.86316L16.3333 3.83516Z"
+              fill={fill}
+            />
+          </svg>
+        );
       case "Product Design":
         return (
           <svg
@@ -119,7 +134,7 @@ const Dropdown = ({ dropdownContent, handleMouseOut }: Props) => {
       animate={{ opacity: 1 }}
       onMouseLeave={handleMouseOut}
       transition={{ duration: 0.55, ease: "easeIn" }}
-      className="lg:absolute text-[rgb(55,55,55)] items-center justify-center lg:items-start lg:justify-start lg:w-[520px] mt-8 lg:my-0  lg:shadow-[2px_0_10px_rgba(55,55,55,0.5)] lg:rounded-[8px] lg:flex-row gap-2 lg:flex-wrap lg:gap-4 lg:right-[10%] lg:bottom-[-220px] relative flex flex-col bottom-0 text-center z-[900] bg-white lg:px-6 lg:py-4 "
+      className="lg:absolute text-[rgb(55,55,55)] items-center justify-center lg:text-[16px] lg:w-[520px] mt-8 lg:my-0  lg:shadow-[2px_0_10px_rgba(55,55,55,0.5)] lg:rounded-[8px] lg:grid gap-2 lg:grid-cols-2 lg:gap-4 lg:right-[10%] lg:bottom-[-220px] relative flex flex-col bottom-0 text-center z-[900] bg-white lg:px-6 lg:py-4 "
     >
       {dropdownContent.map((content, index) => (
         <Link

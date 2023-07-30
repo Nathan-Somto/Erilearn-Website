@@ -768,6 +768,138 @@
             ]
           }
         ]
+      },
+      {
+        "id": 6,
+        "courseName": "Data Science",
+        "courseOverview": "The course covers fundamental concepts in data science, including data manipulation, statistical analysis, machine learning, and data visualization. Students will gain hands-on experience using popular tools and techniques to extract valuable insights from data. By course completion, participants will be equipped with the skills to drive data-driven decision-making in various domains.",
+        "description": "Embark on an exhilarating journey into the world of Data Science. Explore data manipulation, statistical analysis, machine learning algorithms, and powerful data visualization techniques. Unleash your analytical prowess to extract valuable insights from diverse datasets and make informed decisions.\n\nThis comprehensive course empowers you with in-demand skills to excel in the dynamic field of Data Science. Dive into data exploration, identify trends, and build predictive models that drive innovation and business growth. By course completion, you'll be well-versed in data-driven problem-solving and ready to make an impact in the rapidly evolving world of data-driven decision-making. So, join us now and unlock the potential of data science!",
+        "instructor": "Abidemi Rasheed",
+        "workedAt": "IBM",
+        "avatar": "bidemi_arms.png",
+        "videoLink": "https://www.youtube.com/embed/X3paOmcrTjQ",
+        "meta_description": "Embark on a journey into the world of Data Science with our comprehensive course.",
+        "meta_keywords": "Data Science, Data Manipulation, Statistical Analysis, Machine Learning, Data Visualization",
+        "productCard": {
+          "duration": "120 hours",
+          "level": "intermediate",
+          "course": "45 modules",
+          "project": "2 Projects",
+          "downloadLink": "",
+          "price": "NGN 200,000"
+        },
+        "weeks": [
+          {
+            "weekNumber": 1,
+            "topic": "Introduction to Data Science",
+            "content": [
+              "Overview of Data Science and its applications",
+              "Introduction to data analysis and manipulation",
+              "Data cleaning and preprocessing techniques",
+              "Exploratory data analysis (EDA)",
+              "Data visualization fundamentals"
+            ]
+          },
+          {
+            "weekNumber": 2,
+            "topic": "Statistical Analysis",
+            "content": [
+              "Descriptive statistics",
+              "Probability distributions",
+              "Hypothesis testing",
+              "Correlation and regression analysis",
+              "Statistical modeling"
+            ]
+          },
+          {
+            "weekNumber": 3,
+            "topic": "Machine Learning Basics",
+            "content": [
+              "Supervised and unsupervised learning",
+              "Classification algorithms",
+              "Regression algorithms",
+              "Clustering algorithms",
+              "Model evaluation and selection"
+            ]
+          },
+          {
+            "weekNumber": 4,
+            "topic": "Advanced Machine Learning",
+            "content": [
+              "Ensemble methods",
+              "Dimensionality reduction",
+              "Feature engineering",
+              "Hyperparameter tuning",
+              "Handling imbalanced data"
+            ]
+          },
+          {
+            "weekNumber": 5,
+            "topic": "Deep Learning Fundamentals",
+            "content": [
+              "Neural networks and activation functions",
+              "Backpropagation algorithm",
+              "Convolutional Neural Networks (CNN)",
+              "Recurrent Neural Networks (RNN)",
+              "Transfer learning"
+            ]
+          },
+          {
+            "weekNumber": 6,
+            "topic": "Data Science Tools and Libraries",
+            "content": [
+              "Python programming for data science",
+              "Pandas for data manipulation",
+              "NumPy and SciPy for numerical computing",
+              "Scikit-learn for machine learning",
+              "Matplotlib and Seaborn for data visualization"
+            ]
+          },
+          {
+            "weekNumber": 7,
+            "topic": "Big Data and Distributed Computing",
+            "content": [
+              "Introduction to big data and distributed computing",
+              "Hadoop and MapReduce",
+              "Apache Spark for data processing",
+              "Handling large datasets efficiently",
+              "Real-time data processing"
+            ]
+          },
+          {
+            "weekNumber": 8,
+            "topic": "Data Science Ethics and Privacy",
+            "content": [
+              "Ethical considerations in data science",
+              "Data privacy and security",
+              "Responsible AI and fairness",
+              "Data governance and compliance",
+              "Protecting sensitive information"
+            ]
+          },
+          {
+            "weekNumber": 9,
+            "topic": "Data Science in Business",
+            "content": [
+              "Data-driven decision-making",
+              "Predictive analytics for business",
+              "A/B testing and experimentation",
+              "Customer segmentation",
+              "Recommendation systems"
+            ]
+          },
+          {
+            "weekNumber": 10,
+            "topic": "Data Science Capstone Project",
+            "content": [
+              "Defining the problem statement",
+              "Data exploration and analysis",
+              "Building and evaluating models",
+              "Interpreting results and insights",
+              "Project presentation and documentation"
+            ]
+          }
+        ]
       }
     ]
   }

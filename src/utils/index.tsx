@@ -16,6 +16,8 @@ const formatLink = (text:string)=>
           return courseLink + "/2";
         case 'Full Stack Python':
           return courseLink + "/3";
+        case 'Data Science':
+          return courseLink + "/6";
         case 'Get Started':
           return 'https://www.bit.ly/ERILEARN';
         case 'Faq':
