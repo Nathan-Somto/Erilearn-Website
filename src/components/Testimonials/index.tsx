@@ -101,7 +101,7 @@ const Testimonials = (props: Props) => {
                         stroke="#F7A6A4"
                       />
                     </svg>
-                    <p className="text-[24px] font-medium font-poppins ">
+                    <p className="text-[18px] sm:text-[24px] font-medium font-poppins ">
                       {item.testimonial}
                     </p>
                     <div className="flex items-center gap-4  border-l-[6px] rounded-[3px] pl-3 border-primary border-solid">
@@ -110,7 +110,7 @@ const Testimonials = (props: Props) => {
                         alt={item.name}
                         height={50}
                         width={50}
-                        className="rounded-[50%] w-[50px] h-[50px]"
+                        className="rounded-[50%] w-[50px] object-cover h-[50px]"
                       />
                       <p className="font-medium font-poppins">{item.name}</p>
                     </div>

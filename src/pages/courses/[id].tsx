@@ -31,11 +31,11 @@ const CoursePage = ({course: data}: Props) => {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.65, ease: "easeIn", delay: 0.34 }}
-              className="leading-[70px] max-w-[90%]"
+              className="text-[40px] leading-[1.3] md:text-[45px] max-w-[500px] lg:leading-[1.4] lg:text-[52px]"
             >
               {data.courseName}
             </motion.h1>
-            <p className="w-[80%] text-[#5D5D61] leading-[26px] font-poppins opacity-80">
+            <p className="lg:w-[80%] w-[90%] text-[#5D5D61] leading-[26px] font-poppins opacity-80">
               {data.description.split("\n").map((line, index) => (
                 <motion.span
                   initial={{ opacity: 0, scale: 0 }}
@@ -147,7 +147,7 @@ const CoursePage = ({course: data}: Props) => {
               className="space-y-[24px]"
             >
               <p className="badge">Course Overview</p>
-              <h2 className="font-bold leading-[50px] text-[#373737]">
+              <h2 className="font-bold leading-[1.3] text-[25px] sm:text-[30px] text-[#373737]">
                 What&apos;s {data.courseName} ?
               </h2>
             </motion.div>

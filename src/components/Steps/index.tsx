@@ -14,10 +14,10 @@ const Steps = (props: Props) => {
         transition={{ duration: 0.65, ease: "easeIn" }}
         viewport ={{once: true}}
       >
-        <h3 className="mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">
+        <h3 className="mb-3 uppercase text-[1.02rem] sm:text-[1.1rem] font-semibold text-[#c7403c]">
           {Steps.heading3}
         </h3>
-        <h1 className=" text-[30px] md:text-[42px]  text-secondary">
+        <h1 className=" text-[25px] sm:text-[30px] md:text-[42px]  text-secondary">
           {Steps.heading1}
         </h1>
       </motion.div>

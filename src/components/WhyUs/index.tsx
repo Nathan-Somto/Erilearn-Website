@@ -15,8 +15,8 @@ const WhyUs = (props: Props) => {
         transition={{duration:0.65, ease:"easeIn"}}
         viewport ={{once: true}}
        className="text-center">
-        <h3 className="  mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">{WhyUs.heading3}</h3>
-        <h1 className=" text-[30px] md:text-[42px]  text-secondary">{WhyUs.heading1}</h1>
+        <h3 className="  mb-3 uppercase text-[1.02rem] sm:text-[1.1rem] font-semibold text-[#c7403c]">{WhyUs.heading3}</h3>
+        <h1 className=" text-[25px] sm:text-[30px] md:text-[42px]  text-secondary">{WhyUs.heading1}</h1>
       </motion.div>
       <div className="flex gap-[30px] items-center justify-center flex-wrap mt-[80px]">
         {WhyUs.Card.map((item, index) => (

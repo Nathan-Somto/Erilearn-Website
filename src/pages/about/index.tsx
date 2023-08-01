@@ -32,18 +32,18 @@ const AboutPage = () => {
         <title>Erilearn | Who we are</title>
       </Head>
       <div className="text-secondary">
-        <header className="flex lg:flex-row overflow-x-hidden flex-col pt-[96px] lg:pt-0 items-center min-h-[calc(100vh+96px)] -mt-[96px]  px-[5%] gap-[20px]">
+        <header className="flex lg:flex-row overflow-x-hidden flex-col pt-[96px] lg:pt-0 items-center min-h-[calc(100vh+96px)] -mt-[96px]  w-[90%] mx-auto gap-[20px]">
           <motion.div
             initial={{ x: "-100%", opacity: 0 }}
             transition={{ duration: 0.65, ease: "easeIn", type:"tween" }}
             animate={{ x: "0%", opacity: 1 }}
-            className="lg:w-[65%] w-[80%] mb-[30px] lg:mb-0 mx-auto text-center lg:text-left flex-shrink-0 space-y-[24px]"
+            className="lg:w-[65%]  mb-[30px] lg:mb-0 mx-auto text-center lg:text-left flex-shrink-0 space-y-[24px]"
           >
             <p className="badge">{hero.badge}</p>
-            <h1 className="lg:w-[60%] text-[50px] max-[1023px]:max-w-[320px] max-[1023px]:mx-auto w-full leading-normal font-bold lg:text-[62px]">
+            <h1 className="lg:w-[60%] text-[45px] leading-[1.3] max-[1023px]:max-w-[320px] max-[1023px]:mx-auto w-full lg:leading-normal font-bold lg:text-[62px]">
               {hero.heading1}
             </h1>
-            <div className="opacity-80 text-[1.1rem] space-y-5 w-full lg:w-[80%]">
+            <div className="opacity-80 text-[1rem] lg:text-[1.1rem] space-y-5 w-full lg:w-[80%]">
               <p>{hero.para1}</p>
               <p>{hero.para2}</p>
             </div>

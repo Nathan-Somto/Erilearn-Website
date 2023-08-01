@@ -18,8 +18,8 @@ type Props =
 const NavItem = ({ text, withDropdown, dropdownContent }: Props) => {
   const [openDropdown, setOpenDropdown] = useState(false);
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
     if (withDropdown) {
+      e.preventDefault();
       setOpenDropdown((prev) => !prev);
     }
   };

@@ -16,14 +16,14 @@ const Courses = (props: Props) => {
         className="px-[5%] flex items-center justify-between"
       >
         <div>
-        <h3 className="mb-3 uppercase text-[1.1rem] font-semibold text-[#c7403c]">
+        <h3 className="mb-3 uppercase text-[1.02rem] sm:text-[1.1rem] font-semibold text-[#c7403c]">
           {Courses.heading3}
         </h3>
-        <h1 className="text-secondary text-[30px]  md:text-[42px]">
+        <h1 className="text-secondary text-[25px] sm:text-[30px]  md:text-[42px]">
           {Courses.heading1}
         </h1>
         </div>
-        <Link href='courses' className="text-[#c7403c] text-[1.08rem] font-semibold self-end">See All</Link>
+        <Link href='courses' className="text-[#c7403c] text-[1rem] sm:text-[1.08rem] font-semibold self-end">See All</Link>
       </motion.div>
       <div className="relative">
         <motion.div

@@ -1,6 +1,6 @@
 import React from "react";
 import data from "@/data/data.json";
-import Image from 'next/image';
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { handleEnrollClick } from "@/utils";
 type Props = {};
@@ -8,25 +8,30 @@ type Props = {};
 const Hero = (props: Props) => {
   const { hero } = data;
   return (
-    <header className="bg-gradient-to-tl overflow-hidden from-[rgba(244,137,133,0.61)] pt-32 pb-20 xl:pb-0 xl:pt-0 xl:flex-row flex-col via-[#fff] to-[rgba(244,137,133,0.21)] flex w-full -mt-24  min-h-screen xl:items-center justify-center px-[5%]">
+    <header className="bg-gradient-to-tl overflow-hidden from-[rgba(244,137,133,0.61)] pt-32 pb-20 xl:pb-0 xl:pt-0 xl:flex-row flex-col via-[#fff] to-[rgba(244,137,133,0.21)] flex w-full -mt-24  min-h-screen xl:items-center xl:justify-center px-[5%]">
       <motion.div
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: "0%", opacity: 1 }}
         transition={{ duration: 0.75, ease: "easeIn" }}
-        className="mt-[10%] text-center lg:text-left lg:mt-0"
+        className="mt-[10%] text-left lg:mt-0"
       >
-        <h1 className="text-[50px] md:text-[62px] xl:text-[72px] w-[80%] lg:mx-0 max-w-[600px]  xl:w-full mx-auto text-secondary leading-[70px] md:leading-[78px]  xl:leading-[85px]">
+        <h1 className="text-[40px] leading-[1.3] md:text-[45px] max-w-[500px] lg:leading-[1.4] lg:text-[52px] w-[80%] lg:w-full capitalize  mx-0 lg:max-w-[600px]    text-secondary">
           {hero.heading1}
-          <span className="text-primary">{hero.span}</span>
+          <span className="text-primary ">{hero.span}</span>
         </h1>
-        <p className="opacity-80 mt-6 mx-auto lg:border-l-4 border-solid min-w-[250px] border-primary pl-4 w-[80%] lg:w-[60%] text-[17px] lg:mx-0 font-medium xl:text-[20px]">
+        <p className="opacity-80 mt-6  border-l-4 border-solid min-w-[250px] border-primary pl-4 w-[80%] max-w-[350px]  text-[16px]   font-medium lg:text-[18px]">
           {hero.paragraph}
         </p>
-        <div className="mt-8 flex flex-col gap-[12px] max-w-[500px] mx-auto justify-center items-center lg:max-w-full lg:justify-start lg:flex-row">
-          <button className="primary-btn w-[225px] " onClick={handleEnrollClick}>Enroll now</button>
-          <button className="primary-btn bg-transparent rounded-[8px]  w-[225px] text-[#3E3D3D] border-2 flex items-center gap-2 border-solid border-[#CFCFD1] ">
+        <div className="mt-8 flex max-[499px]:flex-col gap-[12px] max-w-[500px]   lg:max-w-full">
+          <button
+            className="primary-btn max-w-[225px]"
+            onClick={handleEnrollClick}
+          >
+            Enroll now
+          </button>
+          <button className="primary-btn bg-transparent rounded-[8px]  max-w-[225px] text-[#3E3D3D] border-2 flex items-center gap-2 border-solid border-[#CFCFD1] ">
             <span>
-            <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
@@ -48,10 +53,7 @@ const Hero = (props: Props) => {
                 />
               </svg>
             </span>
-            <span>
-
-            Watch video
-            </span>
+            <span>Watch video</span>
           </button>
         </div>
       </motion.div>
@@ -62,7 +64,14 @@ const Hero = (props: Props) => {
           transition={{ delay: 0.7, duration: 0.7, ease: "easeIn" }}
           className="absolute flex-shrink-0 z-[5] top-[-5px] rounded-[128px] border-4 border-solid border-white overflow-hidden left-[20%]"
         >
-          <Image src={"/ope.png"} priority alt="staff" height={350} width={280} className="object-cover h-[350px]" />
+          <Image
+            src={"/ope.png"}
+            priority
+            alt="staff"
+            height={350}
+            width={280}
+            className="object-cover h-[350px]"
+          />
         </motion.figure>
         <motion.figcaption
           initial={{ scale: 0 }}
@@ -102,10 +111,17 @@ const Hero = (props: Props) => {
         <motion.figure
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ delay: 0.75, duration: 0.65, ease: "easeIn" }}
-          className="relative rounded-[25%] lg:w-full lg:rounded-[8px] overflow-hidden mx-auto lg:mx-0 w-[350px] h-[350px]"
+          className="relative  w-full rounded-[8px] overflow-hidden mx-auto lg:mx-0  h-[350px]"
         >
-          <Image src={"/ima_arm.png"} className="object-cover" fill priority alt="taiwo" />
+          <Image
+            src={"/ima_arm.png"}
+            className="object-cover"
+            fill
+            priority
+            alt="taiwo"
+          />
         </motion.figure>
       </div>
     </header>

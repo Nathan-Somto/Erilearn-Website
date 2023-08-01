@@ -15,13 +15,15 @@ type Props = {
 
 const CoursesCard = (props: Props) => {
   return (
-    <Link href={`/courses/${props.level.replace('Level','').trim()}`}  className="h-[565px] block bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[80%] sm:w-[380px]  flex-shrink-0  shadow-[1px_4px_12px_rgb(204,204,204)] rounded-[12px] overflow-hidden">
-      <Image
-        src={"/" + props.image}
-        height={178}
-        width={380}
-        alt={props.title}
-      />
+    <Link href={`/courses/${props.level.replace('Level','').trim()}`}  className=" h-[500px]  block bg-white cursor-pointer hover:scale-110 transition-all ease-out duration-300 w-[300px] sm:w-[33.3%] sm:min-w-[380px]  flex-shrink-0  shadow-[1px_4px_12px_rgb(204,204,204)] rounded-[12px] overflow-hidden">
+      <figure className="w-full h-[178px] relative">
+        <Image
+          src={"/" + props.image}
+          fill
+          alt={props.title}
+          className="object-cover"
+        />
+      </figure>
       <div className="flex px-6 mt-4 justify-between items-center ">
         <p className="bg-[#FCDBDA] text-[#342423] font-semibold rounded-[6px] px-5 py-1">
           {props.level}
@@ -59,10 +61,14 @@ const CoursesCard = (props: Props) => {
         </h3>
         <div className="h-[85px] text-[#373737]">
           <div className="flex  mt-6 items-center mb-2 gap-4 font-poppins">
-            <img
-              src={props.avatar}
-              className="border-[#FCDBDA] border-2 border-solid object-cover rounded-[50%] h-[52px] w-[52px]"
+            <figure className="relative h-[52px] border-[#FCDBDA] border-2 border-solid w-[52px]">
+            <Image
+              src={"/" + props.avatar}
+              alt={props.avatar.replace('.png', '')}
+              fill
+              className="object-cover"
             />
+            </figure>
             <h4 className="font-medium text-[1.1rem]">{props.instructor}</h4>
           </div>
           <p>
