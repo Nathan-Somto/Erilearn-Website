@@ -22,7 +22,8 @@ const HomePage = (props: Props) => {
     <>
       <Head>
       <title>Erilearn - Transition into Tech in 3 months</title>
-      <meta name="description" content={siteDescription} />
+        <meta name="description" content={siteDescription} />
+        <meta name="keywords" content="Erilearn, tech career, 3 months, technology, courses, instructors, coding, programming, career shift, affordable, learn now pay later," />
         <meta property="og:title" content={`${siteName} - Transition into Tech in 3 Months`} />
         <meta property="og:description" content={siteDescription} />
         <meta property="og:image" content={ogImageUrl} />

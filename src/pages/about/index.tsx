@@ -30,6 +30,19 @@ const AboutPage = () => {
     <>
       <Head>
         <title>Erilearn | Who we are</title>
+        <meta name="description" content="Discover Erilearn - Your Pathway to a Tech Career in Just 3 Months. Learn how our comprehensive courses and experienced instructors can help you transition to the tech industry successfully." />
+        <meta name="keywords" content="Erilearn, tech career, 3 months, technology, courses, instructors, mission, vision" />
+        <meta name="author" content="Nathan Somto" />
+        <meta property="og:title" content="Erilearn - Learn about Who we are" />
+        <meta property="og:description" content="Discover Erilearn - Your Pathway to a Tech Career in Just 3 Months. Learn how our comprehensive courses and experienced instructors can help you transition to the tech industry successfully." />
+        <meta property="og:image" content="/laptops.png" />
+        <meta property="og:url" content="https://erilearn-website.vercel.app/about" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Erilearn - Learn about Who we are" />
+        <meta name="twitter:description" content="Discover Erilearn - Your Pathway to a Tech Career in Just 3 Months. Learn how our comprehensive courses and experienced instructors can help you transition to the tech industry successfully." />
+        <meta name="twitter:image" content="/laptops.png" />
+        <meta name="twitter:url" content="https://erilearn-website.vercel.app/about" />
       </Head>
       <div className="text-secondary">
         <header className="flex lg:flex-row overflow-x-hidden flex-col pt-[96px] lg:pt-0 items-center min-h-[calc(100vh+96px)] -mt-[96px]  w-[90%] mx-auto gap-[20px]">

@@ -15,6 +15,8 @@ const ContactPage = (props: Props) => {
     <>
       <Head>
         <title>Erilearn | Contact Us</title>
+        <meta name="description" content="Get in touch with Erilearn - Your Pathway to a Tech Career in Just 3 Months. Contact our team to learn more about our courses and how we can help you transition to the tech industry successfully." />
+        <meta name="keywords" content="Erilearn, contact us, tech career, 3 months, technology, courses, instructors" />
       </Head>
       <div className="min-h-[calc(100vh+96px)] -mb-[50px] bg-[#FDF5F5] -mt-[96px] pt-[96px]">
         <header className="text-secondary text-center mx-auto overflow-hidden h-[300px] space-y-8 max-w-[600px] flex flex-col justify-center">
