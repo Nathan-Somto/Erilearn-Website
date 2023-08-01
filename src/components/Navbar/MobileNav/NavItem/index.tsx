@@ -8,19 +8,24 @@ type Props =
       text: string;
       withDropdown?: boolean;
       dropdownContent?: never;
+      closeNav: () => void
     }
   | {
       text: string;
       withDropdown: boolean;
       dropdownContent: string[];
+      closeNav: () => void
     };
 
-const NavItem = ({ text, withDropdown, dropdownContent }: Props) => {
+const NavItem = ({ text, withDropdown, dropdownContent, closeNav }: Props) => {
   const [openDropdown, setOpenDropdown] = useState(false);
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     if (withDropdown) {
       e.preventDefault();
       setOpenDropdown((prev) => !prev);
+    }
+    else{
+      closeNav()
     }
   };
   return (

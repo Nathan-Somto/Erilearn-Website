@@ -74,7 +74,7 @@ const Navbar = () => {
       </motion.div>
       {/* Mobile Nav */}
       <AnimatePresence mode="wait">
-        {openMobileNav && <MobileNav />}
+        {openMobileNav && <MobileNav closeNav={mobileNavToggle} />}
       </AnimatePresence>
     </motion.nav>
   );

@@ -2,9 +2,11 @@ import React from "react";
 import data from "@/data/data.json";
 import NavItem from "./NavItem";
 import { Variants, motion } from "framer-motion";
-type Props = {};
+type Props = {
+  closeNav: ()=> void;
+};
 
-const MobileNav = (props: Props) => {
+const MobileNav = ({closeNav}:Props) => {
   const { navbar } = data;
   const ulVariants: Variants = {
     hidden: {
@@ -51,7 +53,7 @@ const MobileNav = (props: Props) => {
     >
       <li className="relative">
       <motion.div variants={divVariants}>
-        <NavItem text={'Home'}/>
+        <NavItem text={'Home'} closeNav={closeNav} />
       </motion.div>
       </li>
       {navbar.text.map((item, index) => {
@@ -67,6 +69,7 @@ const MobileNav = (props: Props) => {
                 dropdownContent={
                   item === "Courses" ? navbar["Courses"] : undefined
                 }
+                closeNav={closeNav}
               />
             </motion.div>
           </li>
