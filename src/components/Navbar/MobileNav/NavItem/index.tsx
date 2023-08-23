@@ -32,16 +32,16 @@ const NavItem = ({ text, withDropdown, dropdownContent, closeNav }: Props) => {
     <>
       <Link
         href={"/" + formatLink(text)}
-        className={`text-[30px] hover:opacity-80 flex items-center justify-center gap-1 ${openDropdown ? 'opacity-50':""}`}
+        className={`text-[22px]  flex px-[5%] ${!(withDropdown && openDropdown)? 'border-b':''}  pb-7 border-solid border-b-[#EF4D48] hover:opacity-50 gap-1 ${openDropdown ? 'opacity-50':""}`}
         onClick={handleClick}
       >
         <span>{text}</span>
         {withDropdown &&(
-        <span >
+        <span  className="self-center" >
            <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -54,12 +54,12 @@ const NavItem = ({ text, withDropdown, dropdownContent, closeNav }: Props) => {
                 width="24"
                 height="24"
               >
-                <rect width="24" height="24" fill="#D9D9D9" />
+                <rect width="18" height="18" fill="#EF4D48" />
               </mask>
               <g mask="url(#mask0_21_219)">
                 <path
                   d="M12 15.375L6 9.37501L7.4 7.97501L12 12.575L16.6 7.97501L18 9.37501L12 15.375Z"
-                  fill="#373737"
+                  fill="#EF4D48"
                 />
               </g>
             </svg>

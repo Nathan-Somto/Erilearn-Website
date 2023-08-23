@@ -51,6 +51,7 @@ const Navbar = () => {
         <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
         Erilearn
       </Link>
+    {openMobileNav &&  <div className="lg:hidden absolute w-full h-full inset-0 z-[54] bg-white"></div> }
       {/* Desktop Nav */}
       <DesktopNav />
       <motion.div
