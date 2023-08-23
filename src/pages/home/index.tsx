@@ -1,9 +1,9 @@
 import Courses from "@/components/CoursesSection";
 import Faqs from "@/components/Faqs";
 import Hero from "@/components/Hero";
-import Loader from "@/components/Loader";
 import Perks from "@/components/Perks";
 import Steps from "@/components/Steps";
+import StudentCompanies from "@/components/StudentCompanies";
 import Testimonials from "@/components/Testimonials";
 import WhyUs from "@/components/WhyUs";
 import { AnimatePresence } from "framer-motion";
@@ -46,6 +46,7 @@ const HomePage = (props: Props) => {
         <div className="bg-[#FDF5F5] border-t border-solid border-gray-100">
           <Testimonials />
         </div>
+        <StudentCompanies/>
         <Faqs />
       </main>
     </>
