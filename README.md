@@ -2,7 +2,7 @@
     <img src='./public/logo.svg' height=100>
     <h1> Erilearn Website </h1>
   <p>
-    Erilearn is a career accelerator that offers training in various in-demand tech skills. With the promise of making you job-ready <strong>in just 3 months,</strong> Erilearn welcomes learners from diverse backgrounds.
+    Erilearn is a career accelerator that offers training's in various in-demand tech skills. With the promise of making you job-ready <strong>in just 3 months,</strong> Erilearn welcomes learners from diverse backgrounds.
     </p>
 </div>
 
@@ -15,13 +15,13 @@ Under :construction:
 
 if you are interested in knowing :thinking:
 
-- Next js (React Framework)
+- Next js (React Meta Framework)
 - React (Ui Library)
 - Typescript (Statically Typed Language)
 - Tailwind Css (Css Framework)
 - Framer Motion (Animation Library)
 - Yup (Schema Definition Library)
-- Fomrik (Form Library)
+- Formik (Form Library)
 
 ## :handshake: Contributing to Project
 We welcome contributions to enhance the Erilearn website. Here's how you can get involved:
