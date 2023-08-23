@@ -7,9 +7,9 @@ const Loader = () => {
   const Router = useRouter()
   return (
     <motion.div
-      initial={{ height: "100%" }}
-      animate={{ height: "0%" }}
-      transition={{ delay: 3, duration: 0.8 }}
+      initial={{ opacity: "1" }}
+      animate={{ opacity: "0" }}
+      transition={{ delay: 3, duration: 0.65 }}
       onAnimationComplete={() => Router.replace('/home')}
       className="h-full fixed grid place-items-center top-0 bottom-0 left-0 right-0 w-full z-[500000] bg-white"
     >
