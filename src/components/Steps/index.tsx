@@ -72,13 +72,13 @@ const Steps = (props: Props) => {
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.55, ease: "easeIn" ,delay:0.2 }}
           viewport ={{once: true}}
-          className="h-[390px] relative overflow-hidden min-w-[300px] w-[80%] max-w-[400px] rounded-t-[90px] rounded-b-[120px]"
+          className="h-[390px] relative overflow-hidden min-w-[300px] w-[80%] max-w-[450px]  rounded-[60px]"
         >
           <Image
-            src="/taiwo_laptop.png"
+            src="/female-mac.jpg"
             className="object-cover"
             fill
-            alt="taiwo and timi"
+            alt="female with mac book pro."
           />
         </motion.figure>
       </div>

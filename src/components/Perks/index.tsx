@@ -32,12 +32,12 @@ const Perks = (props: Props) => {
       >
         <h1
           className={
-            "text-secondary text-[25px] sm:text-[30px] md:text-[42px] mb-7 leading-[60px]"
+            "text-secondary text-[25px] sm:text-[28px] md:text-[35px] md:w-[80%] md:mx-auto lg:w-full lg:text-[40px] mb-7 leading-[1.5]"
           }
         >
           {Perks.heading1}
         </h1>
-        <div className="flex flex-col gap-6 text-[1.02rem] sm:text-[1.1rem] font-poppins">
+        <div className="flex flex-col gap-6 text-[1rem] sm:text-[1.1rem] font-poppins">
           <p className="mx-auto lg:mx-0 w-[80%] opacity-80">{Perks.para1}</p>
           <p className="mx-auto lg:mx-0 w-[80%] opacity-80">{Perks.para2}</p>
           <button onClick={handleEnrollClick} className="primary-btn lg:mx-0 mx-auto w-[195px]">

@@ -20,7 +20,7 @@ const Testimonials = (props: Props) => {
   return (
     <section
       id="testimonials"
-      className="mt-[100px] mx-[10%] flex pt-[50px] pb-[75px] w-full  flex-col"
+      className="mt-[100px] mx-auto  flex pt-[50px] pb-[75px] w-[90%]  flex-col"
     >
       <motion.div
         initial={{ x: "-100%", opacity: 0 }}
@@ -35,7 +35,7 @@ const Testimonials = (props: Props) => {
           {testimonials.heading1}
         </h1>
       </motion.div>
-      <div className="lg:flex mt-[60px] space-y-[80px] lg:space-y-0 lg:items-center lg:gap-[10%]  ">
+      <div className="flex flex-wrap mt-[60px]   items-center gap-[10vmin]  ">
         <motion.figure
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: [0,0,0,0,0,1] }}
@@ -76,7 +76,7 @@ const Testimonials = (props: Props) => {
             </div>
           </figcaption>
         </motion.figure>
-        <div className="flex flex-col lg:w-[500px] w-[80%] flex-shrink-0 overflow-x-hidden">
+        <div className="flex flex-col min-w-[300px] max-w-[500px] w-[80%] flex-shrink-0 overflow-x-hidden">
           <AnimatePresence mode="wait">
             {testimonials.Card.map(
               (item, index) =>
