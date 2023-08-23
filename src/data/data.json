@@ -26,9 +26,9 @@
         "image": "fullstack-js.png",
         "level": "Level 2",
         "modules": "40",
-        "instructor": "Taiwo Joseph",
-        "workedAt": "Google",
-        "avatar":"taiwo_arms.png",
+        "instructor": "Tola Jinadu",
+        "workedAt": "FCMB",
+        "avatar":"tola.png",
         "job":"Software Engineer"
       },
       {
@@ -36,9 +36,9 @@
         "image": "fullstack-python.png",
         "level": "Level 3",
         "modules": "20",
-        "instructor": "Timilehin Oluwasegun",
-        "workedAt": "Facebook",
-        "avatar":"timi_sitting.png",
+        "instructor": "Tola Jinadu",
+        "workedAt": "FCMB",
+        "avatar":"tola.png",
         "job":"Software Engineer"
         
       },
@@ -47,8 +47,8 @@
         "image": "product-design.png",
         "level": "Level 1",
         "modules": "35",
-        "instructor": "Ope Akintomade",
-        "avatar":"ope.png",
+        "instructor": "Timilehin Oyedele",
+        "avatar":"timi_sitting.png",
         "workedAt": "Apple",
         "job":"Product Designer"
       },
@@ -57,9 +57,9 @@
         "image": "product-management.png",
         "level": "Level 4",
         "modules": "40",
-        "instructor": "Akorede Olarinde",
-        "workedAt": "Amazon",
-        "avatar":"korede_arms.png",
+        "instructor": "Divine Egbuna",
+        "workedAt": "Onehealththing",
+        "avatar":"divine.jpeg",
         "job":"Product Manager"
       },
       {
@@ -158,6 +158,21 @@
         "name": "Michael Brown",
         "testimonial": "Erilearn's community is a treasure trove of knowledge and networking. I've connected with industry professionals and expanded my horizons."
       }
+    ]
+  },
+  "Companies": {
+    "heading3":"Our Students",
+    "heading1":"Educating Learners From Different Industries",
+    "para":"We have helped different student like you from different industries across the globe to transition and gain mastery in their newly chosen fields of interests",
+    "images":[
+      "/ups.png",
+      "/gtb.png",
+      "/quickteller.png",
+      "/buypower.png",
+      "/union.png",
+      "/uba.png",
+      "/flutterwave.png",
+      "/africa.png"
     ]
   },
   "Faq": {

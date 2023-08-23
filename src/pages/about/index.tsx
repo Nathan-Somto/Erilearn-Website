@@ -8,6 +8,7 @@ import Steps from "@/components/Steps";
 import ImageCard from "@/components/ImageCard";
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
+import { handleEnrollClick } from "@/utils";
 const AboutPage = () => {
   const { hero, sections, team } = data;
   const swiperRef = useRef<Swiper | null>(null);
@@ -53,14 +54,14 @@ const AboutPage = () => {
             className="lg:w-[65%]  mb-[30px] lg:mb-0 mx-auto text-center lg:text-left flex-shrink-0 space-y-[24px]"
           >
             <p className="badge">{hero.badge}</p>
-            <h1 className="lg:w-[60%] text-[45px] leading-[1.3] max-[1023px]:max-w-[320px] max-[1023px]:mx-auto w-full lg:leading-normal font-bold lg:text-[62px]">
+            <h1 className="lg:w-[60%] text-[45px] leading-[1.3] max-[1023px]:max-w-[320px] max-[1023px]:mx-auto w-full lg:leading-[1.4] font-bold lg:text-[62px]">
               {hero.heading1}
             </h1>
             <div className="opacity-80 text-[1rem] lg:text-[1.1rem] space-y-5 w-full lg:w-[80%]">
               <p>{hero.para1}</p>
               <p>{hero.para2}</p>
             </div>
-            <button className="primary-btn min-w-[300px] w-[50%] max-w-[300px]">
+            <button className="primary-btn min-w-[300px] w-[50%] max-w-[300px]" onClick={handleEnrollClick}>
               {hero.btn}
             </button>
           </motion.div>
@@ -87,7 +88,7 @@ const AboutPage = () => {
             ))}
           </div>
           <Steps />
-          <section id="team" className="mt-[50px] w-[90%] mx-auto">
+          <section id="team" className="mt-[50px] w-[90%] mx-auto text-center">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -96,8 +97,8 @@ const AboutPage = () => {
               <p className="badge mb-3">{team.badge}</p>
               <h2>{team.heading}</h2>
             </motion.div>
-            <div className="swiper-container h-[500px] mt-[50px] w-[80vw] ">
-              <div className="swiper-wrapper ">
+            <div className="swiper-container h-[500px] mt-[10px] w-[90vw] mx-auto ">
+              <div className="swiper-wrapper flex justify-center items-center ">
                 {team.card.map((item, index) => (
                   <ImageCard key={index + item.name} {...item} />
                 ))}

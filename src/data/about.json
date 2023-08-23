@@ -26,10 +26,11 @@
         "badge":"Our Team",
         "heading":"Meet our Real MVP's",
         "card":[
-        {"image":"taiwo_arms.png", "name":"Taiwo Joseph", "title":"Ceo & Co-Founder of Erilearn"},
-        {"image":"korede_arms.png", "name":"Akorede Olarinde", "title":"Coo"},
-        {"image":"bidemi_arms.png", "name":"Abidemi Rasheed", "title":"Chief Marketer"},
-        {"image":"timi_sitting.png", "name":"Timilehin Oluwasegun", "title":"Senior Product Designer"},
-        {"image":"ope.png", "name":"Opeyemi", "title":"Senior Product Manager"}
+        {"image":"taiwo_arms.png", "name":"Taiwo Joseph", "title":"Ceo & Co-Founder of Erilearn", "linkedinUrl":"https://www.linkedin.com/in/josephtaiwodorcas/"},
+        {"image":"korede_arms.png", "name":"Akorede Olarinde", "title":"Coo", "linkedinUrl":"https://www.linkedin.com/in/akorede-olarinde-ba2302131/"},
+        {"image":"bidemi_arms.png", "name":"Abidemi Rasheed", "title":"Chief Marketer", "linkedinUrl":"https://www.linkedin.com/in/zainab-abidemi-rasheed-312750198/"},
+        {"image":"timi_sitting.png", "name":"Timilehin Oyedele", "title":"Product Designer Instructor","linkedinUrl":""},
+        {"image":"divine.jpeg", "name":"Divine Egbuna", "title":"Product Manager Instructor", "linkedinUrl": "https://www.linkedin.com/in/divine-egbuna-43504a167/?originalSubdomain=ng"},
+        {"image":"tola.png", "name":"Tola Jinadu", "title":"Javascript Instructor","linkedinUrl":"https://www.linkedin.com/in/omotola-jinadu-693800205/"}
     ]}
 }
