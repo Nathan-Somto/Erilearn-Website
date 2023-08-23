@@ -22,7 +22,7 @@ const CoursesContainer = ({ children }: Props) => {
           </h1>
         </motion.div>
       </div>
-      <div className="gap-[80px] justify-center min-[600px]:justify-start  items-center flex flex-wrap">
+      <div className="gap-[40px] justify-center min-[600px]:justify-start  items-center flex flex-wrap">
         {children}
       </div>
     </section>
